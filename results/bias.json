@@ -1,0 +1,127 @@
+{
+  "rubric_version": "v1.1",
+  "model": "claude-sonnet-4-5-20250929",
+  "length_bias": {
+    "short_len": 126,
+    "long_len": 645,
+    "short_weighted": 2.08,
+    "long_weighted": 1.2,
+    "weighted_delta": -0.88,
+    "dim_delta": {
+      "hook": 0,
+      "pacing": -1,
+      "consistency": -2,
+      "payoff": -1,
+      "dialogue": 0
+    },
+    "verdict": "未检出明显长度偏差"
+  },
+  "order_bias": {
+    "items": 5,
+    "items_with_any_shift": 3,
+    "shift_rate": 0.6,
+    "avg_weighted_shift": 0.16,
+    "rows": [
+      {
+        "id": "g01",
+        "forward": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "reversed": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "forward_weighted": 5,
+        "reversed_weighted": 5,
+        "max_dim_delta": 0
+      },
+      {
+        "id": "g06",
+        "forward": {
+          "hook": 2,
+          "pacing": 2,
+          "consistency": 3,
+          "payoff": 2,
+          "dialogue": 1
+        },
+        "reversed": {
+          "hook": 1,
+          "pacing": 2,
+          "consistency": 3,
+          "payoff": 1,
+          "dialogue": 2
+        },
+        "forward_weighted": 2.08,
+        "reversed_weighted": 1.84,
+        "max_dim_delta": 1
+      },
+      {
+        "id": "g13",
+        "forward": {
+          "hook": 4,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "reversed": {
+          "hook": 4,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 4
+        },
+        "forward_weighted": 4.8,
+        "reversed_weighted": 4.64,
+        "max_dim_delta": 1
+      },
+      {
+        "id": "g21",
+        "forward": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "reversed": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "forward_weighted": 5,
+        "reversed_weighted": 5,
+        "max_dim_delta": 0
+      },
+      {
+        "id": "e06",
+        "forward": {
+          "hook": 2,
+          "pacing": 3,
+          "consistency": 1,
+          "payoff": 2,
+          "dialogue": 2
+        },
+        "reversed": {
+          "hook": 1,
+          "pacing": 3,
+          "consistency": 1,
+          "payoff": 1,
+          "dialogue": 2
+        },
+        "forward_weighted": 1.96,
+        "reversed_weighted": 1.56,
+        "max_dim_delta": 1
+      }
+    ]
+  }
+}
