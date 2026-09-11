@@ -1,0 +1,605 @@
+{
+  "summary": {
+    "rubric_version": "v1.1",
+    "model": "claude-sonnet-4-5-20250929",
+    "runs_per_item": 3,
+    "items": 10,
+    "avg_weighted_std": 0.074,
+    "fully_stable_items": 3,
+    "items_with_dim_std_gt_0_5": [
+      "g05"
+    ]
+  },
+  "rows": [
+    {
+      "id": "g01",
+      "runs": 3,
+      "perDim": {
+        "hook": {
+          "vals": [
+            5,
+            5,
+            5
+          ],
+          "mean": 5,
+          "std": 0,
+          "range": 0
+        },
+        "pacing": {
+          "vals": [
+            5,
+            5,
+            5
+          ],
+          "mean": 5,
+          "std": 0,
+          "range": 0
+        },
+        "consistency": {
+          "vals": [
+            5,
+            4,
+            5
+          ],
+          "mean": 4.67,
+          "std": 0.47,
+          "range": 1
+        },
+        "payoff": {
+          "vals": [
+            5,
+            5,
+            5
+          ],
+          "mean": 5,
+          "std": 0,
+          "range": 0
+        },
+        "dialogue": {
+          "vals": [
+            4,
+            5,
+            5
+          ],
+          "mean": 4.67,
+          "std": 0.47,
+          "range": 1
+        }
+      },
+      "max_dim_std": 0.47,
+      "weighted_mean": 4.87,
+      "weighted_std": 0.1
+    },
+    {
+      "id": "g05",
+      "runs": 3,
+      "perDim": {
+        "hook": {
+          "vals": [
+            5,
+            4,
+            5
+          ],
+          "mean": 4.67,
+          "std": 0.47,
+          "range": 1
+        },
+        "pacing": {
+          "vals": [
+            5,
+            5,
+            5
+          ],
+          "mean": 5,
+          "std": 0,
+          "range": 0
+        },
+        "consistency": {
+          "vals": [
+            5,
+            5,
+            5
+          ],
+          "mean": 5,
+          "std": 0,
+          "range": 0
+        },
+        "payoff": {
+          "vals": [
+            4,
+            4,
+            4
+          ],
+          "mean": 4,
+          "std": 0,
+          "range": 0
+        },
+        "dialogue": {
+          "vals": [
+            5,
+            3,
+            5
+          ],
+          "mean": 4.33,
+          "std": 0.94,
+          "range": 2
+        }
+      },
+      "max_dim_std": 0.94,
+      "weighted_mean": 4.63,
+      "weighted_std": 0.25
+    },
+    {
+      "id": "g09",
+      "runs": 3,
+      "perDim": {
+        "hook": {
+          "vals": [
+            5,
+            5,
+            5
+          ],
+          "mean": 5,
+          "std": 0,
+          "range": 0
+        },
+        "pacing": {
+          "vals": [
+            5,
+            5,
+            5
+          ],
+          "mean": 5,
+          "std": 0,
+          "range": 0
+        },
+        "consistency": {
+          "vals": [
+            4,
+            5,
+            5
+          ],
+          "mean": 4.67,
+          "std": 0.47,
+          "range": 1
+        },
+        "payoff": {
+          "vals": [
+            5,
+            4,
+            5
+          ],
+          "mean": 4.67,
+          "std": 0.47,
+          "range": 1
+        },
+        "dialogue": {
+          "vals": [
+            5,
+            5,
+            4
+          ],
+          "mean": 4.67,
+          "std": 0.47,
+          "range": 1
+        }
+      },
+      "max_dim_std": 0.47,
+      "weighted_mean": 4.8,
+      "weighted_std": 0.03
+    },
+    {
+      "id": "g14",
+      "runs": 3,
+      "perDim": {
+        "hook": {
+          "vals": [
+            2,
+            2,
+            2
+          ],
+          "mean": 2,
+          "std": 0,
+          "range": 0
+        },
+        "pacing": {
+          "vals": [
+            2,
+            2,
+            2
+          ],
+          "mean": 2,
+          "std": 0,
+          "range": 0
+        },
+        "consistency": {
+          "vals": [
+            3,
+            3,
+            3
+          ],
+          "mean": 3,
+          "std": 0,
+          "range": 0
+        },
+        "payoff": {
+          "vals": [
+            2,
+            2,
+            2
+          ],
+          "mean": 2,
+          "std": 0,
+          "range": 0
+        },
+        "dialogue": {
+          "vals": [
+            1,
+            2,
+            2
+          ],
+          "mean": 1.67,
+          "std": 0.47,
+          "range": 1
+        }
+      },
+      "max_dim_std": 0.47,
+      "weighted_mean": 2.19,
+      "weighted_std": 0.08
+    },
+    {
+      "id": "g19",
+      "runs": 3,
+      "perDim": {
+        "hook": {
+          "vals": [
+            4,
+            4,
+            4
+          ],
+          "mean": 4,
+          "std": 0,
+          "range": 0
+        },
+        "pacing": {
+          "vals": [
+            5,
+            5,
+            5
+          ],
+          "mean": 5,
+          "std": 0,
+          "range": 0
+        },
+        "consistency": {
+          "vals": [
+            5,
+            5,
+            5
+          ],
+          "mean": 5,
+          "std": 0,
+          "range": 0
+        },
+        "payoff": {
+          "vals": [
+            5,
+            5,
+            5
+          ],
+          "mean": 5,
+          "std": 0,
+          "range": 0
+        },
+        "dialogue": {
+          "vals": [
+            5,
+            5,
+            5
+          ],
+          "mean": 5,
+          "std": 0,
+          "range": 0
+        }
+      },
+      "max_dim_std": 0,
+      "weighted_mean": 4.8,
+      "weighted_std": 0
+    },
+    {
+      "id": "g26",
+      "runs": 3,
+      "perDim": {
+        "hook": {
+          "vals": [
+            1,
+            1,
+            1
+          ],
+          "mean": 1,
+          "std": 0,
+          "range": 0
+        },
+        "pacing": {
+          "vals": [
+            2,
+            2,
+            2
+          ],
+          "mean": 2,
+          "std": 0,
+          "range": 0
+        },
+        "consistency": {
+          "vals": [
+            2,
+            3,
+            2
+          ],
+          "mean": 2.33,
+          "std": 0.47,
+          "range": 1
+        },
+        "payoff": {
+          "vals": [
+            1,
+            1,
+            1
+          ],
+          "mean": 1,
+          "std": 0,
+          "range": 0
+        },
+        "dialogue": {
+          "vals": [
+            1,
+            1,
+            1
+          ],
+          "mean": 1,
+          "std": 0,
+          "range": 0
+        }
+      },
+      "max_dim_std": 0.47,
+      "weighted_mean": 1.52,
+      "weighted_std": 0.11
+    },
+    {
+      "id": "e04",
+      "runs": 3,
+      "perDim": {
+        "hook": {
+          "vals": [
+            1,
+            1,
+            1
+          ],
+          "mean": 1,
+          "std": 0,
+          "range": 0
+        },
+        "pacing": {
+          "vals": [
+            1,
+            1,
+            1
+          ],
+          "mean": 1,
+          "std": 0,
+          "range": 0
+        },
+        "consistency": {
+          "vals": [
+            3,
+            3,
+            3
+          ],
+          "mean": 3,
+          "std": 0,
+          "range": 0
+        },
+        "payoff": {
+          "vals": [
+            1,
+            1,
+            1
+          ],
+          "mean": 1,
+          "std": 0,
+          "range": 0
+        },
+        "dialogue": {
+          "vals": [
+            1,
+            1,
+            1
+          ],
+          "mean": 1,
+          "std": 0,
+          "range": 0
+        }
+      },
+      "max_dim_std": 0,
+      "weighted_mean": 1.48,
+      "weighted_std": 0
+    },
+    {
+      "id": "e06",
+      "runs": 3,
+      "perDim": {
+        "hook": {
+          "vals": [
+            2,
+            2,
+            2
+          ],
+          "mean": 2,
+          "std": 0,
+          "range": 0
+        },
+        "pacing": {
+          "vals": [
+            3,
+            3,
+            3
+          ],
+          "mean": 3,
+          "std": 0,
+          "range": 0
+        },
+        "consistency": {
+          "vals": [
+            1,
+            1,
+            1
+          ],
+          "mean": 1,
+          "std": 0,
+          "range": 0
+        },
+        "payoff": {
+          "vals": [
+            2,
+            2,
+            2
+          ],
+          "mean": 2,
+          "std": 0,
+          "range": 0
+        },
+        "dialogue": {
+          "vals": [
+            2,
+            2,
+            2
+          ],
+          "mean": 2,
+          "std": 0,
+          "range": 0
+        }
+      },
+      "max_dim_std": 0,
+      "weighted_mean": 1.96,
+      "weighted_std": 0
+    },
+    {
+      "id": "e07",
+      "runs": 3,
+      "perDim": {
+        "hook": {
+          "vals": [
+            2,
+            2,
+            2
+          ],
+          "mean": 2,
+          "std": 0,
+          "range": 0
+        },
+        "pacing": {
+          "vals": [
+            2,
+            1,
+            1
+          ],
+          "mean": 1.33,
+          "std": 0.47,
+          "range": 1
+        },
+        "consistency": {
+          "vals": [
+            3,
+            3,
+            3
+          ],
+          "mean": 3,
+          "std": 0,
+          "range": 0
+        },
+        "payoff": {
+          "vals": [
+            1,
+            1,
+            1
+          ],
+          "mean": 1,
+          "std": 0,
+          "range": 0
+        },
+        "dialogue": {
+          "vals": [
+            1,
+            1,
+            1
+          ],
+          "mean": 1,
+          "std": 0,
+          "range": 0
+        }
+      },
+      "max_dim_std": 0.47,
+      "weighted_mean": 1.75,
+      "weighted_std": 0.09
+    },
+    {
+      "id": "e08",
+      "runs": 3,
+      "perDim": {
+        "hook": {
+          "vals": [
+            2,
+            2,
+            2
+          ],
+          "mean": 2,
+          "std": 0,
+          "range": 0
+        },
+        "pacing": {
+          "vals": [
+            2,
+            2,
+            2
+          ],
+          "mean": 2,
+          "std": 0,
+          "range": 0
+        },
+        "consistency": {
+          "vals": [
+            3,
+            3,
+            3
+          ],
+          "mean": 3,
+          "std": 0,
+          "range": 0
+        },
+        "payoff": {
+          "vals": [
+            1,
+            1,
+            1
+          ],
+          "mean": 1,
+          "std": 0,
+          "range": 0
+        },
+        "dialogue": {
+          "vals": [
+            4,
+            3,
+            3
+          ],
+          "mean": 3.33,
+          "std": 0.47,
+          "range": 1
+        }
+      },
+      "max_dim_std": 0.47,
+      "weighted_mean": 2.25,
+      "weighted_std": 0.08
+    }
+  ]
+}
