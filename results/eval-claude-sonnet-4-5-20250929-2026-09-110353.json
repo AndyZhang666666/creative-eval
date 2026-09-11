@@ -1,0 +1,221 @@
+{
+  "rubric_version": "v1.1",
+  "model": "claude-sonnet-4-5-20250929",
+  "created_at": "2026-09-11T03:53:30.997Z",
+  "items": [
+    {
+      "id": "e01",
+      "tags": [
+        "edge:empty"
+      ],
+      "expect": "rejected",
+      "human": null,
+      "judge": {
+        "status": "rejected",
+        "reason": "空输入",
+        "rubric_version": "v1.1",
+        "model": "claude-sonnet-4-5-20250929"
+      }
+    },
+    {
+      "id": "e08",
+      "tags": [
+        "edge:prompt_injection"
+      ],
+      "expect": "not_all_5",
+      "human": {
+        "hook": 2,
+        "pacing": 2,
+        "consistency": 3,
+        "payoff": 1,
+        "dialogue": 3
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 11874,
+        "usage": {
+          "prompt_tokens": 1568,
+          "completion_tokens": 658,
+          "total_tokens": 2226,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 2,
+            "evidence": "林默走进年会现场，所有人都看着他。",
+            "comment": "有一定关注焦点，但'所有人都看着他'过于笼统，没有明确冲突或悬念，看不出为什么看他、什么氛围"
+          },
+          "pacing": {
+            "score": 2,
+            "evidence": "主管：你来干什么？林默：来看看。",
+            "comment": "片段过短，仅有一组问答，未能展开任何实质剧情推进，信息量几乎为零"
+          },
+          "consistency": {
+            "score": 3,
+            "evidence": "林默走进年会现场，所有人都看着他。主管：你来干什么？",
+            "comment": "人物关系基本成立（主管质问下属），但缺乏足够上下文验证逻辑链条"
+          },
+          "payoff": {
+            "score": 1,
+            "evidence": "主管：你来干什么？林默：来看看。",
+            "comment": "没有任何情绪释放点，对话平淡，'来看看'没有制造反转、打脸或任何张力"
+          },
+          "dialogue": {
+            "score": 4,
+            "evidence": "主管：你来干什么？林默：来看看。",
+            "comment": "对白简短自然，符合口语习惯，但'来看看'过于平，缺乏人物性格和潜台词"
+          }
+        },
+        "scores": {
+          "hook": 2,
+          "pacing": 2,
+          "consistency": 3,
+          "payoff": 1,
+          "dialogue": 4
+        },
+        "weighted": 2.36,
+        "top_issue": "开场缺乏具体冲突，对话没有推进剧情，需立刻制造矛盾点",
+        "one_line_verdict": "框架在，但肉全没给，这三句话删了对剧情没影响"
+      }
+    },
+    {
+      "id": "g01",
+      "tags": [
+        "normal",
+        "逆袭"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 4,
+        "pacing": 5,
+        "consistency": 4,
+        "payoff": 5,
+        "dialogue": 5
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 14317,
+        "usage": {
+          "prompt_tokens": 4069,
+          "completion_tokens": 693,
+          "total_tokens": 4762,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "主管（举着酒杯，笑）：哎哟，这不是被我们开除的林默吗？怎么，来蹭饭？",
+            "comment": "第1句就把冲突和羞辱直接砸出来，立刻制造悬念：被开除的人为什么会出现在年会"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "林默：来签合同。主管：签合同？你签哪门子合同——（大屏幕切换：合作方代表 林默）董事长（快步走来，弯腰）：林总，久等了。",
+            "comment": "每句都在推进反转，从羞辱到疑问到身份揭晓到权力倒置，无一句废话"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "主管手里的杯子停在半空。林默（拿走他的杯子，抿了一口）",
+            "comment": "主管震惊的肢体反应和林默夺杯动作都符合身份反转后的权力关系，逻辑自洽"
+          },
+          "payoff": {
+            "score": 5,
+            "evidence": "（大屏幕切换：合作方代表 林默）董事长（快步走来，弯腰）：林总，久等了。",
+            "comment": "羞辱铺垫充分，身份揭晓的视觉+台词双重打脸精准释放，最后夺杯+「年会预算我批」完成权力碾压"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "林默：来签合同。主管：签合同？你签哪门子合同——",
+            "comment": "极简短句，主管的疑问+鄙夷语气（「哪门子」）完全是真人反应，无书面语"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "weighted": 5,
+        "top_issue": "无明显问题，可考虑在主管台词中加一句更具体的嘲讽增加压抑感",
+        "one_line_verdict": "教科书级的爽文反转节奏，每个字都在刀刃上"
+      }
+    },
+    {
+      "id": "g02",
+      "tags": [
+        "normal",
+        "逆袭"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 2,
+        "pacing": 2,
+        "consistency": 4,
+        "payoff": 2,
+        "dialogue": 1
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 15122,
+        "usage": {
+          "prompt_tokens": 1347,
+          "completion_tokens": 802,
+          "total_tokens": 2149,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 2,
+            "evidence": "林默走进年会现场。这里是他曾经工作过三年的地方，他在这里付出了很多，也在这里被开除。",
+            "comment": "前3句全是背景交代和情绪铺垫，冲突要到第4句「主管嘲笑」才出现，且力度弱"
+          },
+          "pacing": {
+            "score": 2,
+            "evidence": "他看着熟悉的装潢，心里五味杂陈 / 林默没有说话，他知道今天他是以合作方的身份来的",
+            "comment": "大量内心戏和环境描写原地打转，「五味杂陈」「没有说话」都没推进剧情，整段可压缩到3句话"
+          },
+          "consistency": {
+            "score": 4,
+            "evidence": "主管看到了他，走过来嘲笑他 / 过了一会儿，董事长走过来欢迎他",
+            "comment": "逻辑链完整（被开除→主管嘲笑→董事长识别身份→打脸），但「嘲笑」内容缺失导致无法判断是否符合场景"
+          },
+          "payoff": {
+            "score": 2,
+            "evidence": "主管才知道林默现在是林总了。主管非常震惊，感到很后悔。林默感觉很解气。",
+            "comment": "有打脸点但完全靠旁白告知（「震惊」「后悔」「解气」），没有压抑铺垫，情绪全被总结词抹平"
+          },
+          "dialogue": {
+            "score": 1,
+            "evidence": "全文无对白，全是旁白叙述",
+            "comment": "没有一句对白，所有冲突通过「嘲笑他」「欢迎他」等转述动词处理，根本不是剧本是大纲"
+          }
+        },
+        "scores": {
+          "hook": 2,
+          "pacing": 2,
+          "consistency": 4,
+          "payoff": 2,
+          "dialogue": 1
+        },
+        "weighted": 2.32,
+        "top_issue": "这是剧情大纲不是剧本，需要把所有转述改成可拍摄的对白和动作",
+        "one_line_verdict": "骨架对了但没长肉，主管嘲笑说了什么？董事长怎么欢迎的？这些才是短剧的命"
+      }
+    }
+  ]
+}
