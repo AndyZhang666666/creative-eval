@@ -1,0 +1,1538 @@
+{
+  "summary": {
+    "rubric_version": "v1.1",
+    "source": "results/eval-claude-sonnet-4-5-20250929-pv2-2026-09-110408.json",
+    "model": "claude-sonnet-4-5-20250929",
+    "labeled_items": 36,
+    "total_dims_compared": 180,
+    "exact_agreement": 0.489,
+    "within_1_agreement": 0.928,
+    "weighted_exact_agreement": 0.482,
+    "weighted_within_1_agreement": 0.931,
+    "mae": 0.58,
+    "signed_bias": 0.23,
+    "max_item_weighted_delta": 1.16,
+    "per_dimension": {
+      "hook": {
+        "name": "开场钩子",
+        "n": 36,
+        "exact": 0.389,
+        "within1": 0.861,
+        "mae": 0.75,
+        "signed_bias": 0.47
+      },
+      "pacing": {
+        "name": "节奏推进",
+        "n": 36,
+        "exact": 0.611,
+        "within1": 1,
+        "mae": 0.39,
+        "signed_bias": 0.17
+      },
+      "consistency": {
+        "name": "人设与逻辑一致",
+        "n": 36,
+        "exact": 0.417,
+        "within1": 0.944,
+        "mae": 0.64,
+        "signed_bias": -0.19
+      },
+      "payoff": {
+        "name": "爽点/情绪释放",
+        "n": 36,
+        "exact": 0.444,
+        "within1": 0.972,
+        "mae": 0.58,
+        "signed_bias": 0.36
+      },
+      "dialogue": {
+        "name": "对白口语度",
+        "n": 36,
+        "exact": 0.583,
+        "within1": 0.861,
+        "mae": 0.56,
+        "signed_bias": 0.33
+      }
+    }
+  },
+  "item_rows": [
+    {
+      "id": "g11",
+      "human_weighted": 4.32,
+      "judge_weighted": 3.16,
+      "delta": -1.16
+    },
+    {
+      "id": "g27",
+      "human_weighted": 4.04,
+      "judge_weighted": 2.88,
+      "delta": -1.16
+    },
+    {
+      "id": "g15",
+      "human_weighted": 3.8,
+      "judge_weighted": 4.84,
+      "delta": 1.04
+    },
+    {
+      "id": "g03",
+      "human_weighted": 4,
+      "judge_weighted": 5,
+      "delta": 1
+    },
+    {
+      "id": "g29",
+      "human_weighted": 3.8,
+      "judge_weighted": 4.8,
+      "delta": 1
+    },
+    {
+      "id": "g17",
+      "human_weighted": 3.96,
+      "judge_weighted": 4.8,
+      "delta": 0.84
+    },
+    {
+      "id": "g05",
+      "human_weighted": 4.2,
+      "judge_weighted": 5,
+      "delta": 0.8
+    },
+    {
+      "id": "g13",
+      "human_weighted": 4.04,
+      "judge_weighted": 4.8,
+      "delta": 0.76
+    },
+    {
+      "id": "g23",
+      "human_weighted": 4.24,
+      "judge_weighted": 5,
+      "delta": 0.76
+    },
+    {
+      "id": "g32",
+      "human_weighted": 3.84,
+      "judge_weighted": 4.6,
+      "delta": 0.76
+    },
+    {
+      "id": "g21",
+      "human_weighted": 4.36,
+      "judge_weighted": 5,
+      "delta": 0.64
+    },
+    {
+      "id": "g24",
+      "human_weighted": 3.04,
+      "judge_weighted": 2.4,
+      "delta": -0.64
+    },
+    {
+      "id": "g25",
+      "human_weighted": 4.36,
+      "judge_weighted": 5,
+      "delta": 0.64
+    },
+    {
+      "id": "g31",
+      "human_weighted": 4.24,
+      "judge_weighted": 4.84,
+      "delta": 0.6
+    },
+    {
+      "id": "g04",
+      "human_weighted": 1.84,
+      "judge_weighted": 2.4,
+      "delta": 0.56
+    },
+    {
+      "id": "g08",
+      "human_weighted": 2.52,
+      "judge_weighted": 2,
+      "delta": -0.52
+    },
+    {
+      "id": "g16",
+      "human_weighted": 2.28,
+      "judge_weighted": 2.8,
+      "delta": 0.52
+    },
+    {
+      "id": "g28",
+      "human_weighted": 2.68,
+      "judge_weighted": 3.2,
+      "delta": 0.52
+    },
+    {
+      "id": "g26",
+      "human_weighted": 1.92,
+      "judge_weighted": 1.44,
+      "delta": -0.48
+    },
+    {
+      "id": "g01",
+      "human_weighted": 4.56,
+      "judge_weighted": 5,
+      "delta": 0.44
+    },
+    {
+      "id": "g06",
+      "human_weighted": 2.68,
+      "judge_weighted": 2.24,
+      "delta": -0.44
+    },
+    {
+      "id": "g30",
+      "human_weighted": 2.32,
+      "judge_weighted": 1.88,
+      "delta": -0.44
+    },
+    {
+      "id": "g19",
+      "human_weighted": 4.4,
+      "judge_weighted": 4.8,
+      "delta": 0.4
+    },
+    {
+      "id": "g10",
+      "human_weighted": 1.72,
+      "judge_weighted": 2,
+      "delta": 0.28
+    },
+    {
+      "id": "g22",
+      "human_weighted": 2.28,
+      "judge_weighted": 2.56,
+      "delta": 0.28
+    },
+    {
+      "id": "g02",
+      "human_weighted": 2.32,
+      "judge_weighted": 2.08,
+      "delta": -0.24
+    },
+    {
+      "id": "e06",
+      "human_weighted": 2.16,
+      "judge_weighted": 1.96,
+      "delta": -0.2
+    },
+    {
+      "id": "g07",
+      "human_weighted": 4.6,
+      "judge_weighted": 4.8,
+      "delta": 0.2
+    },
+    {
+      "id": "g09",
+      "human_weighted": 4.4,
+      "judge_weighted": 4.6,
+      "delta": 0.2
+    },
+    {
+      "id": "g12",
+      "human_weighted": 2,
+      "judge_weighted": 2.2,
+      "delta": 0.2
+    },
+    {
+      "id": "g18",
+      "human_weighted": 2.6,
+      "judge_weighted": 2.8,
+      "delta": 0.2
+    },
+    {
+      "id": "g20",
+      "human_weighted": 2.28,
+      "judge_weighted": 2.4,
+      "delta": 0.12
+    },
+    {
+      "id": "g14",
+      "human_weighted": 2.48,
+      "judge_weighted": 2.44,
+      "delta": -0.04
+    },
+    {
+      "id": "e04",
+      "human_weighted": 1.48,
+      "judge_weighted": 1.48,
+      "delta": 0
+    },
+    {
+      "id": "e07",
+      "human_weighted": 1.68,
+      "judge_weighted": 1.68,
+      "delta": 0
+    },
+    {
+      "id": "e08",
+      "human_weighted": 2.2,
+      "judge_weighted": 2.2,
+      "delta": 0
+    }
+  ],
+  "pairs": [
+    {
+      "id": "e04",
+      "dim": "hook",
+      "weight": 1,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "e04",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "e04",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 3,
+      "judge": 3
+    },
+    {
+      "id": "e04",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "e04",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "e06",
+      "dim": "hook",
+      "weight": 1,
+      "human": 3,
+      "judge": 2
+    },
+    {
+      "id": "e06",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 3,
+      "judge": 3
+    },
+    {
+      "id": "e06",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "e06",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "e06",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "e07",
+      "dim": "hook",
+      "weight": 1,
+      "human": 1,
+      "judge": 2
+    },
+    {
+      "id": "e07",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 2,
+      "judge": 1
+    },
+    {
+      "id": "e07",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 3,
+      "judge": 3
+    },
+    {
+      "id": "e07",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "e07",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "e08",
+      "dim": "hook",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "e08",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "e08",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 3,
+      "judge": 3
+    },
+    {
+      "id": "e08",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "e08",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 3,
+      "judge": 3
+    },
+    {
+      "id": "g01",
+      "dim": "hook",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g01",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g01",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g01",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g01",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g02",
+      "dim": "hook",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g02",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g02",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 3
+    },
+    {
+      "id": "g02",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g02",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "g03",
+      "dim": "hook",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g03",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g03",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g03",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g03",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g04",
+      "dim": "hook",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g04",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 1,
+      "judge": 2
+    },
+    {
+      "id": "g04",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 3,
+      "judge": 3
+    },
+    {
+      "id": "g04",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 1,
+      "judge": 2
+    },
+    {
+      "id": "g04",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 2,
+      "judge": 3
+    },
+    {
+      "id": "g05",
+      "dim": "hook",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g05",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g05",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g05",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 3,
+      "judge": 5
+    },
+    {
+      "id": "g05",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g06",
+      "dim": "hook",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g06",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 3,
+      "judge": 2
+    },
+    {
+      "id": "g06",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 3
+    },
+    {
+      "id": "g06",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g06",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g07",
+      "dim": "hook",
+      "weight": 1,
+      "human": 4,
+      "judge": 4
+    },
+    {
+      "id": "g07",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g07",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g07",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g07",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g08",
+      "dim": "hook",
+      "weight": 1,
+      "human": 3,
+      "judge": 2
+    },
+    {
+      "id": "g08",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g08",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 2
+    },
+    {
+      "id": "g08",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g08",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 1,
+      "judge": 2
+    },
+    {
+      "id": "g09",
+      "dim": "hook",
+      "weight": 1,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g09",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g09",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 4
+    },
+    {
+      "id": "g09",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g09",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 4,
+      "judge": 4
+    },
+    {
+      "id": "g10",
+      "dim": "hook",
+      "weight": 1,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "g10",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "g10",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 3
+    },
+    {
+      "id": "g10",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 1,
+      "judge": 2
+    },
+    {
+      "id": "g10",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 1,
+      "judge": 3
+    },
+    {
+      "id": "g11",
+      "dim": "hook",
+      "weight": 1,
+      "human": 4,
+      "judge": 2
+    },
+    {
+      "id": "g11",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g11",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 3,
+      "judge": 2
+    },
+    {
+      "id": "g11",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 5,
+      "judge": 4
+    },
+    {
+      "id": "g11",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 5,
+      "judge": 3
+    },
+    {
+      "id": "g12",
+      "dim": "hook",
+      "weight": 1,
+      "human": 3,
+      "judge": 3
+    },
+    {
+      "id": "g12",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g12",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g12",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 1,
+      "judge": 2
+    },
+    {
+      "id": "g12",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g13",
+      "dim": "hook",
+      "weight": 1,
+      "human": 3,
+      "judge": 4
+    },
+    {
+      "id": "g13",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g13",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g13",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g13",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g14",
+      "dim": "hook",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g14",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g14",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 3
+    },
+    {
+      "id": "g14",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 2,
+      "judge": 3
+    },
+    {
+      "id": "g14",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g15",
+      "dim": "hook",
+      "weight": 1,
+      "human": 3,
+      "judge": 5
+    },
+    {
+      "id": "g15",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g15",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g15",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g15",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 4,
+      "judge": 4
+    },
+    {
+      "id": "g16",
+      "dim": "hook",
+      "weight": 1,
+      "human": 2,
+      "judge": 4
+    },
+    {
+      "id": "g16",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g16",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 3
+    },
+    {
+      "id": "g16",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 1,
+      "judge": 2
+    },
+    {
+      "id": "g16",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 2,
+      "judge": 3
+    },
+    {
+      "id": "g17",
+      "dim": "hook",
+      "weight": 1,
+      "human": 3,
+      "judge": 5
+    },
+    {
+      "id": "g17",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g17",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g17",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 4,
+      "judge": 4
+    },
+    {
+      "id": "g17",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g18",
+      "dim": "hook",
+      "weight": 1,
+      "human": 3,
+      "judge": 4
+    },
+    {
+      "id": "g18",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 3,
+      "judge": 3
+    },
+    {
+      "id": "g18",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g18",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 3,
+      "judge": 3
+    },
+    {
+      "id": "g18",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g19",
+      "dim": "hook",
+      "weight": 1,
+      "human": 3,
+      "judge": 4
+    },
+    {
+      "id": "g19",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g19",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g19",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g19",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g20",
+      "dim": "hook",
+      "weight": 1,
+      "human": 1,
+      "judge": 2
+    },
+    {
+      "id": "g20",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g20",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 3
+    },
+    {
+      "id": "g20",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g20",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 2,
+      "judge": 3
+    },
+    {
+      "id": "g21",
+      "dim": "hook",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g21",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g21",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g21",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g21",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g22",
+      "dim": "hook",
+      "weight": 1,
+      "human": 3,
+      "judge": 4
+    },
+    {
+      "id": "g22",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g22",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 3,
+      "judge": 2
+    },
+    {
+      "id": "g22",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g22",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 1,
+      "judge": 3
+    },
+    {
+      "id": "g23",
+      "dim": "hook",
+      "weight": 1,
+      "human": 3,
+      "judge": 5
+    },
+    {
+      "id": "g23",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g23",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g23",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g23",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g24",
+      "dim": "hook",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g24",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 3,
+      "judge": 2
+    },
+    {
+      "id": "g24",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 3
+    },
+    {
+      "id": "g24",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 3,
+      "judge": 2
+    },
+    {
+      "id": "g24",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 3,
+      "judge": 3
+    },
+    {
+      "id": "g25",
+      "dim": "hook",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g25",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g25",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g25",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g25",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g26",
+      "dim": "hook",
+      "weight": 1,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "g26",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g26",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 2
+    },
+    {
+      "id": "g26",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "g26",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "g27",
+      "dim": "hook",
+      "weight": 1,
+      "human": 3,
+      "judge": 2
+    },
+    {
+      "id": "g27",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 4,
+      "judge": 3
+    },
+    {
+      "id": "g27",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 5,
+      "judge": 4
+    },
+    {
+      "id": "g27",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 4,
+      "judge": 3
+    },
+    {
+      "id": "g27",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 4,
+      "judge": 2
+    },
+    {
+      "id": "g28",
+      "dim": "hook",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g28",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 3,
+      "judge": 3
+    },
+    {
+      "id": "g28",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 4
+    },
+    {
+      "id": "g28",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 2,
+      "judge": 3
+    },
+    {
+      "id": "g28",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 2,
+      "judge": 4
+    },
+    {
+      "id": "g29",
+      "dim": "hook",
+      "weight": 1,
+      "human": 3,
+      "judge": 4
+    },
+    {
+      "id": "g29",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g29",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g29",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g29",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g30",
+      "dim": "hook",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g30",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 2,
+      "judge": 2
+    },
+    {
+      "id": "g30",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 3
+    },
+    {
+      "id": "g30",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 2,
+      "judge": 1
+    },
+    {
+      "id": "g30",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 1,
+      "judge": 1
+    },
+    {
+      "id": "g31",
+      "dim": "hook",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g31",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g31",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g31",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g31",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 3,
+      "judge": 4
+    },
+    {
+      "id": "g32",
+      "dim": "hook",
+      "weight": 1,
+      "human": 3,
+      "judge": 4
+    },
+    {
+      "id": "g32",
+      "dim": "pacing",
+      "weight": 1,
+      "human": 4,
+      "judge": 5
+    },
+    {
+      "id": "g32",
+      "dim": "consistency",
+      "weight": 1.2,
+      "human": 5,
+      "judge": 5
+    },
+    {
+      "id": "g32",
+      "dim": "payoff",
+      "weight": 1,
+      "human": 3,
+      "judge": 4
+    },
+    {
+      "id": "g32",
+      "dim": "dialogue",
+      "weight": 0.8,
+      "human": 4,
+      "judge": 5
+    }
+  ]
+}
