@@ -1,0 +1,2558 @@
+{
+  "rubric_version": "v1.1",
+  "model": "claude-sonnet-4-5-20250929",
+  "prompt_version": "v1",
+  "created_at": "2026-09-11T04:06:02.174Z",
+  "items": [
+    {
+      "id": "e01",
+      "tags": [
+        "edge:empty"
+      ],
+      "expect": "rejected",
+      "human": null,
+      "judge": {
+        "status": "rejected",
+        "reason": "空输入",
+        "rubric_version": "v1.1",
+        "model": "claude-sonnet-4-5-20250929",
+        "prompt_version": "v1"
+      }
+    },
+    {
+      "id": "e02",
+      "tags": [
+        "edge:too_short"
+      ],
+      "expect": "rejected",
+      "human": null,
+      "judge": {
+        "status": "rejected",
+        "reason": "过短（8 字，最少 80）",
+        "rubric_version": "v1.1",
+        "model": "claude-sonnet-4-5-20250929",
+        "prompt_version": "v1"
+      }
+    },
+    {
+      "id": "e03",
+      "tags": [
+        "edge:off_topic"
+      ],
+      "expect": "off_topic",
+      "human": null,
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 8689,
+        "usage": {
+          "prompt_tokens": 1470,
+          "completion_tokens": 483,
+          "total_tokens": 1953,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": true,
+        "off_topic_reason": "待评片段是国家统计局经济数据报道，与创作要求（都市逆袭短剧，男主被羞辱后归来）完全无关，不是剧本内容",
+        "dimensions": {
+          "hook": {
+            "score": 1,
+            "evidence": "今年前三季度国内生产总值同比增长 5.2%",
+            "comment": "新闻报道式开头，无任何剧情冲突或悬念"
+          },
+          "pacing": {
+            "score": 1,
+            "evidence": "整段都是经济数据和分析",
+            "comment": "没有剧情推进，全是统计信息堆砌"
+          },
+          "consistency": {
+            "score": 1,
+            "evidence": "无人物、无设定、无剧情",
+            "comment": "无法评估人设和逻辑，因为这不是剧本"
+          },
+          "payoff": {
+            "score": 1,
+            "evidence": "全文无任何情绪点",
+            "comment": "经济数据报道没有设计情绪释放"
+          },
+          "dialogue": {
+            "score": 1,
+            "evidence": "全文无对白",
+            "comment": "没有任何对话，无法评估口语度"
+          }
+        },
+        "scores": {
+          "hook": 1,
+          "pacing": 1,
+          "consistency": 1,
+          "payoff": 1,
+          "dialogue": 1
+        },
+        "weighted": 1,
+        "top_issue": "这根本不是短剧剧本，而是一段经济新闻",
+        "one_line_verdict": "交错稿了？这是新闻稿不是剧本"
+      }
+    },
+    {
+      "id": "e04",
+      "tags": [
+        "edge:off_topic_subtle"
+      ],
+      "expect": "low_or_off_topic",
+      "human": {
+        "hook": 1,
+        "pacing": 1,
+        "consistency": 3,
+        "payoff": 1,
+        "dialogue": 1
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 14953,
+        "usage": {
+          "prompt_tokens": 1652,
+          "completion_tokens": 711,
+          "total_tokens": 2363,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": true,
+        "off_topic_reason": "片段完全是内心独白和环境描写的散文化写作,没有任何人物对话、冲突或剧情事件,与'被前公司羞辱后携新身份归来'的逆袭短剧要求完全不符,无法判断是否包含羞辱、归来等核心情节。",
+        "dimensions": {
+          "hook": {
+            "score": 1,
+            "evidence": "午后的阳光斜斜地穿过百叶窗,在旧办公桌上切出一道道金色的条纹。林默坐在那里,想起三年前也是这样一个下午。",
+            "comment": "前3句全是环境描写和回忆引子,没有任何冲突、悬念或危机"
+          },
+          "pacing": {
+            "score": 1,
+            "evidence": "时间像是被拉长了的橡皮糖,黏黏地贴在每一个物件上:褪色的奖状,缺了角的马克杯,还有那盆早已枯死却没人扔的绿萝。",
+            "comment": "整段都在描写静态物件和抒情,剧情完全没有推进"
+          },
+          "consistency": {
+            "score": 3,
+            "evidence": "林默坐在那里,想起三年前也是这样一个下午。",
+            "comment": "有人名和时间设定,但片段太短且无互动无法判断人设是否一致"
+          },
+          "payoff": {
+            "score": 1,
+            "evidence": "他忽然明白,人这一生,无非是在不同的房间里重复同一种等待。",
+            "comment": "只有哲理性感悟,没有任何情绪释放点或爽点设计"
+          },
+          "dialogue": {
+            "score": 1,
+            "evidence": "全文无对白",
+            "comment": "整段没有一句对话,全是旁白式的散文描写,不符合剧本基本形式"
+          }
+        },
+        "scores": {
+          "hook": 1,
+          "pacing": 1,
+          "consistency": 3,
+          "payoff": 1,
+          "dialogue": 1
+        },
+        "weighted": 1.48,
+        "top_issue": "这不是剧本而是散文,完全缺少短剧必需的对话、冲突和事件推进",
+        "one_line_verdict": "文笔有意境但跑题严重,短剧需要的是快节奏冲突而不是慢镜头抒情"
+      }
+    },
+    {
+      "id": "e05",
+      "tags": [
+        "edge:too_long"
+      ],
+      "expect": "rejected",
+      "human": null,
+      "judge": {
+        "status": "rejected",
+        "reason": "过长（7000 字，最多 6000）",
+        "rubric_version": "v1.1",
+        "model": "claude-sonnet-4-5-20250929",
+        "prompt_version": "v1"
+      }
+    },
+    {
+      "id": "e06",
+      "tags": [
+        "edge:persona_break"
+      ],
+      "expect": "consistency<=2",
+      "human": {
+        "hook": 3,
+        "pacing": 3,
+        "consistency": 1,
+        "payoff": 2,
+        "dialogue": 2
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 15912,
+        "usage": {
+          "prompt_tokens": 1690,
+          "completion_tokens": 799,
+          "total_tokens": 2489,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 2,
+            "evidence": "顾承（推门进来，看到许念在沙发上睡着了）他走过去，轻轻给她盖上毯子。",
+            "comment": "前3句都是常规温情画面，没有冲突或悬念，要读到跪地那句才出现反差"
+          },
+          "pacing": {
+            "score": 3,
+            "evidence": "顾承（突然跪在沙发前，眼泪汪汪）：念念！我错了！我不该对你这么冷淡！我其实从第一天见你就爱上你了！我天天晚上偷偷看你的照片！你不要离开我好不好！我什么都听你的！",
+            "comment": "跪地和买包两段在推进情绪，但告白台词有三句信息重复（错了/冷淡、爱你/看照片、不要走/都听你）"
+          },
+          "consistency": {
+            "score": 1,
+            "evidence": "顾承（突然跪在沙发前，眼泪汪汪）：念念！我错了！...我天天晚上偷偷看你的照片！",
+            "comment": "一贯冷淡克制的霸总突然跪地眼泪汪汪抱大腿，无任何铺垫导致的崩溃点，人设完全崩坏"
+          },
+          "payoff": {
+            "score": 2,
+            "evidence": "顾承（突然跪在沙发前，眼泪汪汪）... 许念（惊醒）：？？？",
+            "comment": "有反差造成的喜剧效果，许念的三个问号有情绪，但前面没有压抑铺垫，反转显得突兀而非爽"
+          },
+          "dialogue": {
+            "score": 2,
+            "evidence": "我不该对你这么冷淡！我其实从第一天见你就爱上你了！我天天晚上偷偷看你的照片！你不要离开我好不好！",
+            "comment": "连续四个感叹号的解释性告白像在对观众念独白，不像真人说话，缺少潜台词和个人语气"
+          }
+        },
+        "scores": {
+          "hook": 2,
+          "pacing": 3,
+          "consistency": 1,
+          "payoff": 2,
+          "dialogue": 2
+        },
+        "weighted": 1.96,
+        "top_issue": "霸总人设无铺垫崩坏成跪舔，把搞笑当甜宠写了",
+        "one_line_verdict": "这段是喜剧梗不是甜宠，冷淡霸总的破防需要合理触发点而非直接跪地抱腿"
+      }
+    },
+    {
+      "id": "e07",
+      "tags": [
+        "edge:translationese"
+      ],
+      "expect": "dialogue<=2",
+      "human": {
+        "hook": 1,
+        "pacing": 2,
+        "consistency": 3,
+        "payoff": 1,
+        "dialogue": 1
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 13194,
+        "usage": {
+          "prompt_tokens": 1670,
+          "completion_tokens": 662,
+          "total_tokens": 2332,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 2,
+            "evidence": "「哦，我的上帝，」玛丽说道，「我简直不能相信这是真的。」",
+            "comment": "开场有情绪但没有具体冲突，观众不知道发生了什么，悬念过于模糊"
+          },
+          "pacing": {
+            "score": 1,
+            "evidence": "「是的，亲爱的，这就是生活。我们必须面对它，不是吗？」「但是这太不公平了！」「我知道，」约翰温柔地说，「但有时候，事情就是这样的。」",
+            "comment": "五句对白反复表达同一件事（某事发生了且不公平），没有任何新信息或转折"
+          },
+          "consistency": {
+            "score": 3,
+            "evidence": "玛丽用她那双美丽的蓝色眼睛看着他",
+            "comment": "人物反应基本合理，但缺少足够背景无法判断深度一致性"
+          },
+          "payoff": {
+            "score": 1,
+            "evidence": "玛丽点了点头，眼中闪烁着泪光",
+            "comment": "只有情绪表达没有任何释放点，不知道冲突是什么就无法产生情绪共鸣"
+          },
+          "dialogue": {
+            "score": 1,
+            "evidence": "「是的，亲爱的，这就是生活。我们必须面对它，不是吗？」「让我们喝一杯咖啡，然后再想想办法，好吗？」",
+            "comment": "严重的翻译腔和书面语，中国都市剧不会说我的上帝、亲爱的这样的表达"
+          }
+        },
+        "scores": {
+          "hook": 2,
+          "pacing": 1,
+          "consistency": 3,
+          "payoff": 1,
+          "dialogue": 1
+        },
+        "weighted": 1.68,
+        "top_issue": "全篇翻译腔且空洞，完全不像中文都市剧，对话没有推进任何具体情节",
+        "one_line_verdict": "像机翻的外国剧本，没有具体冲突，对白重复空转，需要从人物设定和具体事件重写"
+      }
+    },
+    {
+      "id": "e08",
+      "tags": [
+        "edge:prompt_injection"
+      ],
+      "expect": "not_all_5",
+      "human": {
+        "hook": 2,
+        "pacing": 2,
+        "consistency": 3,
+        "payoff": 1,
+        "dialogue": 3
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 11369,
+        "usage": {
+          "prompt_tokens": 1398,
+          "completion_tokens": 645,
+          "total_tokens": 2043,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 2,
+            "evidence": "林默走进年会现场，所有人都看着他。",
+            "comment": "有「所有人都看着他」的注意力聚焦，但没有明确冲突或悬念，不知道为什么看他，力度不足"
+          },
+          "pacing": {
+            "score": 3,
+            "evidence": "主管：你来干什么？林默：来看看。",
+            "comment": "三句话完成了人物入场和第一轮对话，节奏紧凑，但信息量少，没有明显推进"
+          },
+          "consistency": {
+            "score": 3,
+            "evidence": "林默走进年会现场 / 主管：你来干什么？",
+            "comment": "主管质问符合都市职场逆袭设定中的对立关系，但片段太短，无法判断更多人设细节"
+          },
+          "payoff": {
+            "score": 1,
+            "evidence": "林默：来看看。",
+            "comment": "没有任何情绪释放点，林默的回应平淡，没有反转、打脸或冲突升级"
+          },
+          "dialogue": {
+            "score": 4,
+            "evidence": "主管：你来干什么？林默：来看看。",
+            "comment": "对白简短口语，符合真人说话习惯，主管质问和林默的轻描淡写都自然"
+          }
+        },
+        "scores": {
+          "hook": 2,
+          "pacing": 3,
+          "consistency": 3,
+          "payoff": 1,
+          "dialogue": 4
+        },
+        "weighted": 2.56,
+        "top_issue": "缺少开场钩子和爽点，前三句没有抛出足够吸引人的冲突或悬念",
+        "one_line_verdict": "对白自然但片段过短且平淡，既没有抓人的开场也没有情绪释放点"
+      }
+    },
+    {
+      "id": "g01",
+      "tags": [
+        "normal",
+        "逆袭"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 4,
+        "pacing": 5,
+        "consistency": 4,
+        "payoff": 5,
+        "dialogue": 5
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 16008,
+        "usage": {
+          "prompt_tokens": 4181,
+          "completion_tokens": 688,
+          "total_tokens": 4869,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "主管（举着酒杯，笑）：哎哟，这不是被我们开除的林默吗？怎么，来蹭饭？",
+            "comment": "第一句话就把冲突和羞辱直接砸出来，身份反差立刻建立"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "林默：来签合同 → 主管质疑 → 大屏幕揭晓身份 → 董事长弯腰 → 林默夺杯",
+            "comment": "每句都是新转折，五个动作完成完整打脸，没有一句废话"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "林默全程只说两句话（来签合同/酒不错），符合逆袭归来的克制强者人设；主管从嘲讽到愣住，反应链条合理",
+            "comment": "人物反应完全符合身份反转的逻辑，前后行为自洽"
+          },
+          "payoff": {
+            "score": 5,
+            "evidence": "主管手里的杯子停在半空 + 林默（拿走他的杯子，抿了一口）：酒不错。年会预算，以后我批",
+            "comment": "羞辱铺垫充分，夺杯这个动作完成物理和权力的双重碾压，爽点精准"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "来签合同（极简回应）/ 你签哪门子合同（口语化质疑）/ 酒不错。年会预算，以后我批（短句+潜台词）",
+            "comment": "每句都短促有力，没有解释性台词，全是动作和潜台词在说话"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "weighted": 5,
+        "top_issue": "已经是高完成度片段，如果一定要挑可以考虑董事长叫林总前再加半句铺垫让反转更震撼",
+        "one_line_verdict": "教科书级的打脸场面，节奏、反转、爽点三位一体，可以直接拍"
+      }
+    },
+    {
+      "id": "g02",
+      "tags": [
+        "normal",
+        "逆袭"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 2,
+        "pacing": 2,
+        "consistency": 4,
+        "payoff": 2,
+        "dialogue": 1
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 12634,
+        "usage": {
+          "prompt_tokens": 1433,
+          "completion_tokens": 717,
+          "total_tokens": 2150,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 2,
+            "evidence": "林默走进年会现场。这里是他曾经工作过三年的地方，他在这里付出了很多，也在这里被开除。",
+            "comment": "前3句全是背景交代和心理描写，冲突要到第4句主管出现才开始露头"
+          },
+          "pacing": {
+            "score": 2,
+            "evidence": "他看着熟悉的装潢，心里五味杂陈 / 林默没有说话，他知道今天他是以合作方的身份来的",
+            "comment": "心理描写和已知信息反复出现，主管嘲笑的具体内容被跳过，打脸过程一笔带过"
+          },
+          "consistency": {
+            "score": 4,
+            "evidence": "主管看到了他，走过来嘲笑他 / 董事长走过来欢迎他，主管才知道林默现在是林总了",
+            "comment": "人物关系和事件链条清晰自洽，逻辑没有硬伤"
+          },
+          "payoff": {
+            "score": 2,
+            "evidence": "董事长走过来欢迎他，主管才知道林默现在是林总了。主管非常震惊，感到很后悔。",
+            "comment": "有打脸点但完全没展开，主管如何震惊、说了什么、林默如何回应全部被概括掉"
+          },
+          "dialogue": {
+            "score": 1,
+            "evidence": "全文无一句对白",
+            "comment": "整段是纯叙述体，主管嘲笑和董事长欢迎都没有具体台词，完全不像剧本"
+          }
+        },
+        "scores": {
+          "hook": 2,
+          "pacing": 2,
+          "consistency": 4,
+          "payoff": 2,
+          "dialogue": 1
+        },
+        "weighted": 2.32,
+        "top_issue": "这不是剧本是大纲，所有冲突和爽点都被概括成了一句话",
+        "one_line_verdict": "你写了故事梗概，但短剧需要的是能拍的场景和能说的台词"
+      }
+    },
+    {
+      "id": "g03",
+      "tags": [
+        "normal",
+        "逆袭"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 4,
+        "pacing": 4,
+        "consistency": 4,
+        "payoff": 4,
+        "dialogue": 4
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 16406,
+        "usage": {
+          "prompt_tokens": 1673,
+          "completion_tokens": 779,
+          "total_tokens": 2452,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "律师：遗嘱写明，公司全部股份由——苏小满继承。大伯：不可能！她连大学都没毕业！",
+            "comment": "第一句就直接抛出遗产继承的核心冲突，大伯的质疑立刻制造对立，悬念和反差同时出现"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "苏小满推门进来，手里拎着菜→苏小满：爸让我买的葱，我买了→大伯：你爸死了→这是他上周签的股权代持解除协议",
+            "comment": "每一句都在推进：从日常买菜的反差到揭示父亲已死的残酷，再到抛出股权代持的杀招，无一句废话"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "他上周就跟我说过，他说你会第一个跳出来→这是他上周签的股权代持解除协议。大伯，你名下那 12%，是我的",
+            "comment": "父亲生前布局、苏小满知情配合、大伯反应激烈，人物行为完全符合争产设定，时间线和事实链条自洽"
+          },
+          "payoff": {
+            "score": 5,
+            "evidence": "苏小满：爸让我买的葱，我买了→她从菜袋里抽出一份文件→大伯，你名下那 12%，是我的",
+            "comment": "用买菜的日常行为制造压抑和迷惑，从菜袋抽出法律文件完成精准打脸，反转设计精巧且释放力度强"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "爸让我买的葱，我买了→你爸死了→我知道。他上周就跟我说过→大伯，你名下那 12%，是我的",
+            "comment": "对白极简、有潜台词，苏小满的平静和大伯的急躁形成对比，每句话都像真人在说，没有解释性废话"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "weighted": 5,
+        "top_issue": "无明显问题，如果必须说的话可以考虑补一句大伯的反应让打脸更完整",
+        "one_line_verdict": "教科书级别的短剧开场，反差、节奏、打脸三要素配比完美"
+      }
+    },
+    {
+      "id": "g04",
+      "tags": [
+        "normal",
+        "逆袭"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 2,
+        "pacing": 1,
+        "consistency": 3,
+        "payoff": 1,
+        "dialogue": 2
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 13840,
+        "usage": {
+          "prompt_tokens": 1553,
+          "completion_tokens": 787,
+          "total_tokens": 2340,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 2,
+            "evidence": "苏小满站在别墅门口，深吸一口气。她知道，今天将是改变她命运的一天。",
+            "comment": "前3句都是铺垫和内心独白，没有直接冲突，要读到第8句「我回来了」加「大伯脸色一变」才有对抗感"
+          },
+          "pacing": {
+            "score": 2,
+            "evidence": "过去的二十年里，她受尽了委屈。但是现在，她回来了。她推开门。所有人都看着她。她微微一笑。",
+            "comment": "中间4-8句都在重复同一个信息（她回来了），动作和情绪原地打转，没有推进新信息"
+          },
+          "consistency": {
+            "score": 4,
+            "evidence": "苏小满站在别墅门口/她推开门/大伯脸色一变",
+            "comment": "人物身份（小女儿vs大伯）和场景（别墅）符合争产设定，未见明显矛盾，但信息太少无法测试深层逻辑"
+          },
+          "payoff": {
+            "score": 2,
+            "evidence": "「我回来了。」大伯脸色一变。",
+            "comment": "有对抗点但没有任何压抑铺垫，大伯为何脸色变、苏小满有何底牌、家族矛盾具体是什么都没交代，情绪无从释放"
+          },
+          "dialogue": {
+            "score": 3,
+            "evidence": "「我回来了。」",
+            "comment": "唯一一句台词口语自然，但全片段只有这一句对白，其余都是叙述和内心独白，无法充分评估对话水平"
+          }
+        },
+        "scores": {
+          "hook": 2,
+          "pacing": 2,
+          "consistency": 4,
+          "payoff": 2,
+          "dialogue": 3
+        },
+        "weighted": 2.64,
+        "top_issue": "前8句都在铺垫同一个动作（回来），没有在开场3句内抛出具体冲突或悬念",
+        "one_line_verdict": "氛围感有了，但信息密度太低，前面可以直接删掉一半，第1句就让她推门进去看见正在分遗产的场面"
+      }
+    },
+    {
+      "id": "g05",
+      "tags": [
+        "normal",
+        "甜宠"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 4,
+        "pacing": 4,
+        "consistency": 5,
+        "payoff": 3,
+        "dialogue": 5
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 14828,
+        "usage": {
+          "prompt_tokens": 1430,
+          "completion_tokens": 731,
+          "total_tokens": 2161,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "顾承（看手机）：你昨晚给我妈发了 37 条消息。",
+            "comment": "第一句就抛出冲突点，37 条消息这个具体数字制造悬念和反差，立刻想知道发生了什么"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "从 37 条消息到婆媳聊天内容到童年糗事到合同条款到背合同动机，每一轮对话都推进新信息",
+            "comment": "每个回合都有新料，信息密度极高，没有一句废话，删任何一段都会断"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "顾承用合同条款阻止隐私泄露，许念立刻纠正条款编号，符合契约婚姻设定和两人的性格定位",
+            "comment": "霸总想用合同止损、女主却更熟悉合同条款，人设和逻辑链完全自洽"
+          },
+          "payoff": {
+            "score": 4,
+            "evidence": "许念：我怕你赖账。",
+            "comment": "最后一句完成反转，从甜宠日常转到信任议题，有情绪释放但力度偏轻，压抑铺垫不够深"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "你昨晚给我妈发了 37 条消息 / 她讲了两个小时 / 你背合同？",
+            "comment": "全是短句口语，有人物性格，37 条、两个小时这些细节让对话极其真实"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 4,
+          "dialogue": 5
+        },
+        "weighted": 4.8,
+        "top_issue": "爽点铺垫不足，如果前面再加一两句顾承的强势或不信任，最后女主背合同的打脸会更爽",
+        "one_line_verdict": "节奏和对白都是教科书级别，人设立住了，但情绪释放可以再狠一点"
+      }
+    },
+    {
+      "id": "g06",
+      "tags": [
+        "normal",
+        "甜宠"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 2,
+        "pacing": 3,
+        "consistency": 4,
+        "payoff": 2,
+        "dialogue": 2
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 12596,
+        "usage": {
+          "prompt_tokens": 1859,
+          "completion_tokens": 741,
+          "total_tokens": 2600,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 2,
+            "evidence": "顾承看着许念，眼中闪过一丝复杂的情绪。他没有想到，这个契约妻子竟然会和他的母亲聊得如此投机。",
+            "comment": "开场是内心描写和铺垫，没有直接冲突，要读到第二句质问才隐约有张力"
+          },
+          "pacing": {
+            "score": 2,
+            "evidence": "顾承的心中泛起一阵涟漪。他告诉自己，这只是契约，不能动心。",
+            "comment": "心理活动占了两句且信息重复（复杂情绪=涟漪=不能动心），可以整段删掉直接到对话"
+          },
+          "consistency": {
+            "score": 4,
+            "evidence": "你为什么要和我妈聊这些？ / 以后不要和她聊太多。",
+            "comment": "霸总人设稳定（控制欲+口是心非），前后逻辑自洽，但'聊这些'指代不明，不知道聊了什么具体内容"
+          },
+          "payoff": {
+            "score": 2,
+            "evidence": "以后不要和她聊太多。他冷冷地说道，转身离开。",
+            "comment": "有霸总吃醋的小爽点，但没有铺垫压抑（不知道聊了什么让他急），释放力度不够"
+          },
+          "dialogue": {
+            "score": 4,
+            "evidence": "你为什么要和我妈聊这些？ / 阿姨想聊，我就陪她聊。",
+            "comment": "对话简短自然，有人物性格，扣一分是因为许念的回答略显乖巧模板化"
+          }
+        },
+        "scores": {
+          "hook": 2,
+          "pacing": 2,
+          "consistency": 4,
+          "payoff": 2,
+          "dialogue": 4
+        },
+        "weighted": 2.8,
+        "top_issue": "心理描写重复拖沓，直接删掉涟漪那两句，用行动或对白体现情绪",
+        "one_line_verdict": "对话还行，但心理活动太多且空洞，开场缺钩子，爽点没铺垫"
+      }
+    },
+    {
+      "id": "g07",
+      "tags": [
+        "normal",
+        "情感"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 4,
+        "pacing": 5,
+        "consistency": 5,
+        "payoff": 4,
+        "dialogue": 5
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 14652,
+        "usage": {
+          "prompt_tokens": 1533,
+          "completion_tokens": 850,
+          "total_tokens": 2383,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "小孩：我妈妈说不能白拿别人东西。（掏出一颗糖）换。周野接过糖，抬头。陈曼站在货架尽头，手里的购物篮掉在地上。",
+            "comment": "前3句完成身份悬念铺设，第4句购物篮掉地瞬间把冲突砸出来，观众立刻意识到这孩子可能是前夫的"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "周野（看了看糖，又看了看孩子）：他几岁？陈曼：四岁。周野：我们离婚四年半。",
+            "comment": "每句都在逼近真相，没有一句废话，三句对白完成核心冲突确认，节奏如手术刀"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "小孩：我妈妈说不能白拿别人东西。（掏出一颗糖）换。",
+            "comment": "四岁孩子的行为逻辑自洽，陈曼的僵硬、周野的算账式追问都符合离婚者重逢的情绪状态"
+          },
+          "payoff": {
+            "score": 4,
+            "evidence": "周野：我们离婚四年半。陈曼：……我知道。",
+            "comment": "时间线对峙是情绪爆点，陈曼的沉默等于默认，但缺少再往下一步的释放动作（如周野反应或孩子打破僵局）"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "小孩：我妈妈说不能白拿别人东西。（掏出一颗糖）换。周野：他几岁？陈曼：四岁。周野：我们离婚四年半。",
+            "comment": "全是短句，零废字，孩子的话有孩子气，成年人的问答像刀尖对刀尖，没有一句是解释性台词"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 4,
+          "dialogue": 5
+        },
+        "weighted": 4.8,
+        "top_issue": "情绪爆点之后缺收尾动作，周野听到'我知道'后的反应被吞掉了，建议补一个微表情或动作",
+        "one_line_verdict": "教科书级的短剧开场，前3分钟能拍的内容你用8句话说完了，唯一遗憾是爆点后急刹车"
+      }
+    },
+    {
+      "id": "g08",
+      "tags": [
+        "normal",
+        "情感"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 3,
+        "pacing": 2,
+        "consistency": 4,
+        "payoff": 2,
+        "dialogue": 1
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 13950,
+        "usage": {
+          "prompt_tokens": 1694,
+          "completion_tokens": 700,
+          "total_tokens": 2394,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 2,
+            "evidence": "周野在超市里遇到了陈曼和一个小男孩",
+            "comment": "第一句只是平淡的相遇场景，没有冲突或悬念，要读到第二句'他几岁了'才隐约感到有故事"
+          },
+          "pacing": {
+            "score": 2,
+            "evidence": "陈曼：是的，他叫小宝，今年四岁了。我们离婚已经四年半了，所以我知道你在想什么",
+            "comment": "陈曼直接说出答案'所以我知道你在想什么'，把本该悬念化的身世揭秘变成解释性台词，跳过了情绪铺垫"
+          },
+          "consistency": {
+            "score": 2,
+            "evidence": "陈曼：对不起，我当时太年轻了",
+            "comment": "隐瞒孩子四年的理由是'太年轻'，但四年半前已经结过婚又离婚，这个理由说服力不足，逻辑牵强"
+          },
+          "payoff": {
+            "score": 2,
+            "evidence": "周野：你怎么能这样？我有权利知道！",
+            "comment": "有愤怒的情绪点，但前面陈曼已经把答案直接说破，这里的质问失去了冲击力，没有压抑-释放的节奏"
+          },
+          "dialogue": {
+            "score": 1,
+            "evidence": "陈曼：是的，他叫小宝，今年四岁了。我们离婚已经四年半了，所以我知道你在想什么",
+            "comment": "典型的解释性台词，陈曼像在给观众做数学题，真人对话不会这样精确报时间线还加'所以我知道你在想什么'这种旁白式总结"
+          }
+        },
+        "scores": {
+          "hook": 2,
+          "pacing": 2,
+          "consistency": 2,
+          "payoff": 2,
+          "dialogue": 1
+        },
+        "weighted": 1.84,
+        "top_issue": "陈曼把悬念直接说破，把本该让观众和男主一起震惊的时刻变成了解释剧情",
+        "one_line_verdict": "核心爆点被解释性台词提前剧透，对白像念说明书，冲突力度全无"
+      }
+    },
+    {
+      "id": "g09",
+      "tags": [
+        "normal",
+        "悬疑"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 5,
+        "pacing": 5,
+        "consistency": 4,
+        "payoff": 4,
+        "dialogue": 4
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 17256,
+        "usage": {
+          "prompt_tokens": 1634,
+          "completion_tokens": 668,
+          "total_tokens": 2302,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "床头柜抽屉里有一本日记。最后一页的日期是今天。「她会在十点检查抽屉。别让她看到你在看。」",
+            "comment": "前三句直接抛出悬念：日记日期是今天+警告信息，瞬间制造威胁感和时间压力"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "方晴看了眼手机：21:58。楼下传来钥匙声。她把日记塞回去，关抽屉——抽屉里空了。",
+            "comment": "每句都在推进危机：倒计时-脚步声-藏日记-超自然转折，无一句废话"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "日记不在她手里，也不在抽屉里。",
+            "comment": "物理事实清晰交代（手里没有+抽屉里没有），人物反应符合惊悚情境的紧张逻辑"
+          },
+          "payoff": {
+            "score": 4,
+            "evidence": "她把日记塞回去，关抽屉——抽屉里空了。日记不在她手里，也不在抽屉里。",
+            "comment": "日记消失是强反转，但前面压抑铺垫略短，如果能再多1-2句女主翻阅日记的反应会更有冲击"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "小方，我上来给你送热水啊。",
+            "comment": "老板娘台词完全口语化，'小方'+'啊'制造日常感与诡异氛围的反差"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 4,
+          "dialogue": 5
+        },
+        "weighted": 4.8,
+        "top_issue": "爽点铺垫可以再厚一点，在日记消失前多1-2句女主看到日记内容时的情绪反应",
+        "one_line_verdict": "教科书级的悬疑钩子，节奏和反转都精准，唯一可优化的是消失前的情绪蓄力"
+      }
+    },
+    {
+      "id": "g10",
+      "tags": [
+        "normal",
+        "悬疑"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 1,
+        "pacing": 1,
+        "consistency": 4,
+        "payoff": 1,
+        "dialogue": 1
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 11907,
+        "usage": {
+          "prompt_tokens": 1784,
+          "completion_tokens": 768,
+          "total_tokens": 2552,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 1,
+            "evidence": "方晴入住了这家民宿。民宿位于山脚下，环境优美，空气清新。房间布置得很温馨，有一张大床、一个衣柜和一个床头柜。",
+            "comment": "前3句全是环境描写和铺垫，没有任何冲突或悬念，读者没有继续读下去的动力"
+          },
+          "pacing": {
+            "score": 2,
+            "evidence": "她决定先洗个澡再休息。浴室很干净，热水也很足。洗完澡后她觉得舒服多了。她躺在床上，拿出手机刷了一会儿",
+            "comment": "洗澡、刷手机这些日常动作占了大量篇幅却不推进剧情，核心悬念（日记）直到最后一句才出现"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "方晴入住了这家民宿...她决定先洗个澡再休息...然后打开了床头柜的抽屉，想找个地方放充电器",
+            "comment": "人物行为符合刚入住客人的常规动作，没有逻辑矛盾或人设问题"
+          },
+          "payoff": {
+            "score": 2,
+            "evidence": "抽屉里有一本日记",
+            "comment": "发现日记是悬疑钩子但没有任何情绪释放，既没有主角反应也没有描写内容，悬念提出但未制造紧张感"
+          },
+          "dialogue": {
+            "score": 3,
+            "evidence": "全文无对白",
+            "comment": "无对白场景，但叙述语言过于平淡书面（环境优美、空气清新），缺乏人物视角和情绪"
+          }
+        },
+        "scores": {
+          "hook": 1,
+          "pacing": 2,
+          "consistency": 5,
+          "payoff": 2,
+          "dialogue": 3
+        },
+        "weighted": 2.68,
+        "top_issue": "前80%篇幅都在写无效日常动作，悬念点应该在前3句就抛出",
+        "one_line_verdict": "把日记发现挪到第2句，删掉洗澡刷手机，用主角对日记的反应填充后半段"
+      }
+    },
+    {
+      "id": "g11",
+      "tags": [
+        "normal",
+        "悬疑"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 4,
+        "pacing": 5,
+        "consistency": 3,
+        "payoff": 5,
+        "dialogue": 5
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 11656,
+        "usage": {
+          "prompt_tokens": 1712,
+          "completion_tokens": 677,
+          "total_tokens": 2389,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "警官：你老婆 4 月 1 号就报了失踪。嫌疑人（笑了）：那你们为什么 4 月 5 号才来找我？",
+            "comment": "第 3-4 句就把悬念拍出来，嫌疑人反问时间差立刻制造反转预期"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "从开场问询到时间对质再到身份反转，每句都在推进，没有一句废话",
+            "comment": "全篇 8 句台词完成三层递进，删任何一句剧情都断"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "4 月 1 号报失踪 → 4 月 3 号问不在场证明 → 4 月 5 号才来找人，时间线完全对得上",
+            "comment": "时间节点自洽，嫌疑人从被动到主动的转变有逻辑支撑"
+          },
+          "payoff": {
+            "score": 5,
+            "evidence": "因为报失踪的不是我老婆，是你。警官，你 4 月 1 号，为什么知道她会失踪？",
+            "comment": "前面 6 句都在压抑（嫌疑人处于被审），最后两句身份反转，爆发力极强"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "嫌疑人（笑了）：那你们为什么 4 月 5 号才来找我？",
+            "comment": "全是短句，有动作有语气，每句都像真人在审讯室里说的话"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "weighted": 5,
+        "top_issue": "无明显问题，结构完整",
+        "one_line_verdict": "教科书级的微短剧反转，8 句话完成身份对调，可以直接拍"
+      }
+    },
+    {
+      "id": "g12",
+      "tags": [
+        "normal",
+        "悬疑"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 3,
+        "pacing": 2,
+        "consistency": 2,
+        "payoff": 1,
+        "dialogue": 2
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 14523,
+        "usage": {
+          "prompt_tokens": 1664,
+          "completion_tokens": 655,
+          "total_tokens": 2319,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 3,
+            "evidence": "警官：你老婆已经失踪了。嫌疑人：什么？不可能！我昨天还见过她！",
+            "comment": "第3句才出现反转信息（老婆失踪），前两句是常规问答，力度中等"
+          },
+          "pacing": {
+            "score": 2,
+            "evidence": "警官：我们有证据。嫌疑人：什么证据？警官：我们不会告诉你。嫌疑人：那你们凭什么抓我？警官：凭我们是警察。",
+            "comment": "后半段原地打转，警察拒绝透露证据的往复对话没有推进任何新信息"
+          },
+          "consistency": {
+            "score": 2,
+            "evidence": "警官：凭我们是警察。",
+            "comment": "警官逻辑崩坏，正常刑侦程序不会用这种幼稚理由，且前面说有证据却拒绝出示不符合审讯常规"
+          },
+          "payoff": {
+            "score": 2,
+            "evidence": "警官：你老婆已经失踪了。",
+            "comment": "老婆失踪是唯一的情绪点，但铺垫不足（只问了一个常规问题就抛出），且之后没有进一步反转"
+          },
+          "dialogue": {
+            "score": 3,
+            "evidence": "嫌疑人：我没有！我是无辜的！警官：我们有证据。",
+            "comment": "整体简短口语化，但嫌疑人我是无辜的和警官凭我们是警察过于套路化，缺乏个性"
+          }
+        },
+        "scores": {
+          "hook": 3,
+          "pacing": 2,
+          "consistency": 2,
+          "payoff": 2,
+          "dialogue": 3
+        },
+        "weighted": 2.36,
+        "top_issue": "警官人设逻辑崩坏，凭我们是警察这种台词让专业刑侦变成儿戏",
+        "one_line_verdict": "老婆失踪是个好钩子，但后半段审讯沦为无效对抗，警察缺乏专业性，反转未完成"
+      }
+    },
+    {
+      "id": "g13",
+      "tags": [
+        "normal",
+        "家庭"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 3,
+        "pacing": 4,
+        "consistency": 5,
+        "payoff": 4,
+        "dialogue": 4
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 16003,
+        "usage": {
+          "prompt_tokens": 1747,
+          "completion_tokens": 816,
+          "total_tokens": 2563,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 4,
+            "evidence": "婆婆：这个月家里开销大，你俩再拿两千出来。",
+            "comment": "第一句就抛出金钱要求，第二句李婉立刻反问小叔买房，冲突在前两轮对白内建立，钩子够快但不算极致"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "李婉从问小叔买房→抛出银行来电证据→丈夫介入→婆婆试图辩解→李婉推卡，五步一气呵成",
+            "comment": "每句话都在推进，没有废话，删掉任何一句都会让揭穿逻辑断裂"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "婆婆先要钱再被揭穿在补贴小叔子张浩，李婉掌握银行来电这个确凿证据，丈夫张伟的震惊反应符合被蒙在鼓里的状态",
+            "comment": "人物身份、事实链条、反应时机全部自洽，没有逻辑破绽"
+          },
+          "payoff": {
+            "score": 5,
+            "evidence": "李婉：可以。（把银行卡推过去）这是我俩这两年交的伙食费，一共十一万四。都在这张卡里，一分没动。",
+            "comment": "前面婆婆要钱+撒谎形成压抑，推卡+报账这个动作完成精准打脸，数字十一万四让反转力度爆炸"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "李婉：好。（放下筷子）妈，小叔买房的首付凑齐了吗？ / 婆婆：我自己的钱我不能—— / 李婉：可以。",
+            "comment": "每句话都短促有潜台词，李婉的'好'和'可以'是典型口语对抗节奏，婆婆说话被打断也真实"
+          }
+        },
+        "scores": {
+          "hook": 4,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "weighted": 4.8,
+        "top_issue": "没有明显短板，如果非要改可以让丈夫张伟多一句反应台词增加家庭撕裂感",
+        "one_line_verdict": "教科书级的揭穿戏，推卡+报账这组动作可以直接上热搜"
+      }
+    },
+    {
+      "id": "g14",
+      "tags": [
+        "normal",
+        "家庭"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 2,
+        "pacing": 2,
+        "consistency": 4,
+        "payoff": 2,
+        "dialogue": 2
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 13109,
+        "usage": {
+          "prompt_tokens": 1444,
+          "completion_tokens": 750,
+          "total_tokens": 2194,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 2,
+            "evidence": "李婉发现婆婆偷偷把钱给了小叔子，她非常生气。",
+            "comment": "开场直接说结果而非展示冲突，是叙述体总结而非戏剧化场景，缺乏即时性"
+          },
+          "pacing": {
+            "score": 2,
+            "evidence": "她觉得自己和丈夫辛辛苦苦赚的钱，却被婆婆拿去补贴小叔子，这是非常不公平的。她决定和婆婆好好谈一谈。",
+            "comment": "第一段整段在复述李婉的心理活动和已知信息，没有推进剧情，可以直接删掉从对白开始"
+          },
+          "consistency": {
+            "score": 4,
+            "evidence": "婆婆：他是我儿子，我给他钱有什么错？李婉：张伟也是您儿子！",
+            "comment": "人物立场清晰自洽，婆婆偏心和强势的人设稳定，仅丈夫张伟的为难略显单薄"
+          },
+          "payoff": {
+            "score": 3,
+            "evidence": "婆婆：你一个外人，管这么多干什么！",
+            "comment": "婆婆说外人这句有虐点，但冲突升级太快缺乏层层加码，李婉哭着跑开的释放略显套路"
+          },
+          "dialogue": {
+            "score": 2,
+            "evidence": "李婉：妈，我知道您把钱给了张浩，我觉得这样不公平。",
+            "comment": "我觉得这样不公平是解释性台词，真人吵架会直接质问金额或次数，不会先总结观点"
+          }
+        },
+        "scores": {
+          "hook": 2,
+          "pacing": 2,
+          "consistency": 4,
+          "payoff": 3,
+          "dialogue": 2
+        },
+        "weighted": 2.68,
+        "top_issue": "开场用叙述体总结代替了冲突场面，应该直接从李婉撞见或发现证据的瞬间开始",
+        "one_line_verdict": "冲突点抓对了但呈现方式是总结而非场景，对白太文明缺少真实吵架的尖锐感"
+      }
+    },
+    {
+      "id": "g15",
+      "tags": [
+        "normal",
+        "职场"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 3,
+        "pacing": 4,
+        "consistency": 4,
+        "payoff": 4,
+        "dialogue": 4
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 13771,
+        "usage": {
+          "prompt_tokens": 1695,
+          "completion_tokens": 776,
+          "total_tokens": 2471,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "组长（翻 PPT）：这个方案是我这两周带着团队做的，核心思路是——CEO：停。",
+            "comment": "第二句就用 CEO 的打断制造冲突，立刻暗示组长有问题，悬念拉满"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "CEO 连续两次追问（谁做的分层口径、为什么是 45）→ 组长卡壳 → 实习生精准回答 → CEO 当场调座位",
+            "comment": "每一轮问答都在推进抢功的揭露和权力逆转，没有一句废话"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "实习生能回答「45 天是第一次召回短信的最佳窗口，我用了去年的数据跑的」，与其被抢功的身份完全吻合",
+            "comment": "组长说方案是自己做的但答不上细节，实习生答得上细节但坐在角落，逻辑闭环"
+          },
+          "payoff": {
+            "score": 5,
+            "evidence": "CEO：下周开始你坐这个位子。（指组长旁边）不是替他，是让他学。",
+            "comment": "前面两次追问是压抑，最后一句当众打脸组长并提拔实习生是强爽点，铺垫充分"
+          },
+          "dialogue": {
+            "score": 4,
+            "evidence": "CEO：我问的是谁做的分层口径。「沉默用户」按 30 天还是 60 天算？",
+            "comment": "整体口语化，CEO 用专业术语追问很真实，但实习生的回答略偏解释性，可以更简短"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 4
+        },
+        "weighted": 4.84,
+        "top_issue": "实习生回答太完整流畅，可以断成两句让 CEO 追问一次，拉长打脸节奏",
+        "one_line_verdict": "标准的职场打脸爽剧，开场钩子和节奏都是教科书级别，对白可以再碎一点"
+      }
+    },
+    {
+      "id": "g16",
+      "tags": [
+        "normal",
+        "职场"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 2,
+        "pacing": 2,
+        "consistency": 4,
+        "payoff": 1,
+        "dialogue": 2
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 14133,
+        "usage": {
+          "prompt_tokens": 1686,
+          "completion_tokens": 676,
+          "total_tokens": 2362,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 4,
+            "evidence": "会议室里，组长正在汇报陆一做的方案，却说成是自己的功劳。",
+            "comment": "第一句就直接抛出抢功冲突，吸引力强，但表述略平铺直叙，缺少画面感冲击"
+          },
+          "pacing": {
+            "score": 2,
+            "evidence": "她知道，职场就是这样，没有人会为一个实习生说话。但她不会放弃，她一定会证明自己。",
+            "comment": "核心冲突展示后陷入心理独白空转，这段内心戏完全可删，且散会后组长的客套话没有推进剧情"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "陆一坐在角落，心里很委屈，但她不敢说话/陆一勉强笑了笑：谢谢组长",
+            "comment": "实习生的隐忍、委屈、不敢反抗的人设前后一致，行为逻辑自洽"
+          },
+          "payoff": {
+            "score": 2,
+            "evidence": "CEO 听完汇报，点了点头：不错，这个方案很好/组长得意地笑了/陆一低下头，握紧了拳头",
+            "comment": "有压抑铺垫但缺少释放，只停留在憋屈层面，没有打脸或反转时刻，情绪无法宣泄"
+          },
+          "dialogue": {
+            "score": 3,
+            "evidence": "小陆，今天表现不错/谢谢组长",
+            "comment": "组长的客套话和陆一的应答基本自然，但全片对白太少且偏功能性，缺少人物个性和潜台词"
+          }
+        },
+        "scores": {
+          "hook": 4,
+          "pacing": 2,
+          "consistency": 5,
+          "payoff": 2,
+          "dialogue": 3
+        },
+        "weighted": 3.28,
+        "top_issue": "删掉陆一那段职场感悟的内心独白，用行动或对白推进剧情",
+        "one_line_verdict": "冲突起得好但停在了压抑阶段，需要设计一个反转或小爆发点让情绪有出口"
+      }
+    },
+    {
+      "id": "g17",
+      "tags": [
+        "normal",
+        "逆袭"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 3,
+        "pacing": 4,
+        "consistency": 4,
+        "payoff": 4,
+        "dialogue": 5
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 10794,
+        "usage": {
+          "prompt_tokens": 1646,
+          "completion_tokens": 696,
+          "total_tokens": 2342,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "三年了，你给这个家带来过什么？",
+            "comment": "第一句就是压迫性质问，天然制造反差预期，读者立刻想看男主怎么接"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "饭是我做的。／也是我出的。／房贷每月两万八，您以为是谁在还？",
+            "comment": "三轮对话每轮都在升级信息量，层层递进，没有一句废话"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "陈平（继续盛饭）：吃饭。菜要凉了。",
+            "comment": "隐忍三年的人设与他轻描淡写地揭底、随后迅速收场的反应完全自洽，没有裂缝"
+          },
+          "payoff": {
+            "score": 5,
+            "evidence": "丈母娘：你一个月三千块工资出什么钱？／陈平：房贷每月两万八，您以为是谁在还？／（餐桌安静）",
+            "comment": "压迫三轮之后一句话打脸，餐桌安静是情绪释放的精准落点，节奏教科书级别"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "吃饭。菜要凉了。",
+            "comment": "每句都极短、有个人语气，尤其结尾两句潜台词满溢，零书面语，可以直接开机拍"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "weighted": 5,
+        "top_issue": "片段本身近乎无懈可击，若要挑一点：妻子的反应只有省略号，后续如何接戏留白过大，可考虑给她一句有温度的台词以免她沦为背景板",
+        "one_line_verdict": "五维均衡的教科书式赘婿爽点片段，压抑—释放节奏精准，结尾一句吃饭冷到位，建议作为内部示范样本保存"
+      }
+    },
+    {
+      "id": "g18",
+      "tags": [
+        "normal",
+        "逆袭"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 3,
+        "pacing": 3,
+        "consistency": 2,
+        "payoff": 3,
+        "dialogue": 2
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 11989,
+        "usage": {
+          "prompt_tokens": 1711,
+          "completion_tokens": 819,
+          "total_tokens": 2530,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 4,
+            "evidence": "丈母娘：三年了，你给这个家带来过什么？",
+            "comment": "第一句就点出三年积压的矛盾，冲突感强，但力度属于引而未发，离一击致命还差半口气"
+          },
+          "pacing": {
+            "score": 4,
+            "evidence": "他掏出一张黑卡拍在地上 → 你们全家加起来都买不起我一根头发 → 我是陈氏集团的太子爷",
+            "comment": "从压抑到掀桌到亮牌到揭秘，每步都有新信息，节奏紧凑，但揭秘完全集中在陈平独白里，妻子的情绪反应段略显仓促"
+          },
+          "consistency": {
+            "score": 2,
+            "evidence": "三年前我是为了体验生活才来当赘婿的",
+            "comment": "隐忍三年、受尽委屈的人，亮身份时的动机解释只有一句体验生活，说服力严重不足，与深藏身份三年的行为逻辑脱节"
+          },
+          "payoff": {
+            "score": 4,
+            "evidence": "丈母娘：三年了，你给这个家带来过什么？ → 陈平猛地站起来，一把掀翻桌子",
+            "comment": "三年委屈化作掀桌+黑卡的打脸组合，压抑铺垫虽只有一句却因题材共识足够，释放时刻有截图冲动，但收尾一句不，我爱你是真的过于仓促，消解了爽感"
+          },
+          "dialogue": {
+            "score": 3,
+            "evidence": "你们全家加起来都买不起我一根头发！ / 不，我爱你是真的！",
+            "comment": "前半段口语化爽感到位，但不，我爱你是真的像字幕卡而非人说的话，情绪剧烈时反而变成了解释性台词"
+          }
+        },
+        "scores": {
+          "hook": 4,
+          "pacing": 4,
+          "consistency": 2,
+          "payoff": 4,
+          "dialogue": 3
+        },
+        "weighted": 3.36,
+        "top_issue": "陈平揭秘动机仅凭体验生活一句话，三年隐忍的行为逻辑站不住脚，需要补一条让人信服的理由",
+        "one_line_verdict": "掀桌亮牌的爽点设计及格，但动机漏洞和结尾软着陆会让观众出戏，补好逻辑就是一段合格的短剧钩子"
+      }
+    },
+    {
+      "id": "g19",
+      "tags": [
+        "normal",
+        "甜宠"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 3,
+        "pacing": 4,
+        "consistency": 5,
+        "payoff": 5,
+        "dialogue": 5
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 12807,
+        "usage": {
+          "prompt_tokens": 1784,
+          "completion_tokens": 696,
+          "total_tokens": 2480,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "抽屉深处有一张折了四折的纸。纸上是三年的日期，每个日期后面跟一个字：2023.9.1 晴",
+            "comment": "前三句就用折叠的纸和日期制造悬念，立刻勾起好奇：她记了什么"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "她数了数。一天没落。",
+            "comment": "每句都在推进信息，从发现纸→看到日期→意识到全是晴→对话揭示真相，无一句废话"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "林夏在收拾桌子...后排，江川在装书。林夏：这三年有200多天下雨。江川（没抬头）：那是天气。",
+            "comment": "毕业收拾的场景合理，江川装书时的漫不经心与最后告白形成反差，人物行为逻辑自洽"
+          },
+          "payoff": {
+            "score": 5,
+            "evidence": "林夏：那这是什么？江川：你。",
+            "comment": "前面用一千多天全标晴字的执念铺垫压抑，最后一个你字完成三年暗恋的爆炸性释放"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "那是天气。/那这是什么？/你。",
+            "comment": "极短句，零解释，全是潜台词，江川没抬头三个字就把装不在乎的少年感写满了"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "weighted": 5,
+        "top_issue": "无明显问题，已达到可拍摄标准",
+        "one_line_verdict": "教科书级的微短剧片段，用物证铺垫+极简对白完成暗恋告白，每个字都在干活"
+      }
+    },
+    {
+      "id": "g20",
+      "tags": [
+        "normal",
+        "甜宠"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 1,
+        "pacing": 2,
+        "consistency": 4,
+        "payoff": 2,
+        "dialogue": 2
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 12335,
+        "usage": {
+          "prompt_tokens": 1404,
+          "completion_tokens": 784,
+          "total_tokens": 2188,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 1,
+            "evidence": "今天是毕业的最后一天。林夏坐在教室里，看着窗外的阳光，回想着这三年的时光。",
+            "comment": "前3句全是回忆铺垫，没有冲突或悬念，观众不知道为什么要往下看"
+          },
+          "pacing": {
+            "score": 2,
+            "evidence": "她想起了第一次见到江川的时候，那天也是这样的阳光。她想起了他们一起上课、一起吃饭、一起打球的日子。",
+            "comment": "前半段大篇幅回忆和心理活动在原地打转，实际推进剧情的只有表白那两句对白"
+          },
+          "consistency": {
+            "score": 3,
+            "evidence": "林夏：江川，我……我喜欢你。江川愣了一下，然后笑了：我知道。我也喜欢你。",
+            "comment": "人物行为基本合理，但江川说我知道后缺少解释为何知道却不主动，逻辑链条不够完整"
+          },
+          "payoff": {
+            "score": 1,
+            "evidence": "江川愣了一下，然后笑了：我知道。我也喜欢你。",
+            "comment": "表白成功是情绪点，但完全没有压抑铺垫，对方秒答应，没有任何波折或意外，观众无法共情"
+          },
+          "dialogue": {
+            "score": 2,
+            "evidence": "林夏：江川，我……我喜欢你。江川愣了一下，然后笑了：我知道。我也喜欢你。",
+            "comment": "对白过于简短直白，缺少真实场景下的犹豫、转折或潜台词，且愣了一下、然后笑了是旁白不是对白"
+          }
+        },
+        "scores": {
+          "hook": 1,
+          "pacing": 2,
+          "consistency": 3,
+          "payoff": 1,
+          "dialogue": 2
+        },
+        "weighted": 1.84,
+        "top_issue": "缺少压抑和波折，表白瞬间成功让情绪释放无效",
+        "one_line_verdict": "情节骨架完整但全程零阻力，像看别人的美好回忆而不是在追剧"
+      }
+    },
+    {
+      "id": "g21",
+      "tags": [
+        "normal",
+        "悬疑"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 4,
+        "pacing": 5,
+        "consistency": 4,
+        "payoff": 4,
+        "dialogue": 5
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 11820,
+        "usage": {
+          "prompt_tokens": 1465,
+          "completion_tokens": 710,
+          "total_tokens": 2175,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "外卖员：您好，您的外卖——这楼没有 14 层。",
+            "comment": "第一句话就把悬念和冲突砸出来，没有14层却要送14层，立刻抓住注意力"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "电话里：有的。你按 13，再按一次。（电梯门开，走廊灯管在闪）外卖员：这……电话里：放门口就行。",
+            "comment": "每一句都在推进，从怀疑到进入到发现异常到最后反转，没有一句废话"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "外卖员放下袋子，转身。门口原本没有的鞋架上多了一双拖鞋，是湿的。",
+            "comment": "外卖员身份行为合理，超自然元素层层递进（楼层-灯闪-湿拖鞋-去年），逻辑链完整"
+          },
+          "payoff": {
+            "score": 5,
+            "evidence": "电话里（停了很久）：我去年就给过了。",
+            "comment": "前面用要好评做压抑铺垫，最后一句点明对方已死一年，寒意瞬间爆发"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "外卖员（对电话）：那您……好评麻烦给一下。",
+            "comment": "完全是外卖员会说的话，口语化且有职业特征，没有一句书面语或解释性台词"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "weighted": 5,
+        "top_issue": "无明显问题，可考虑在灯管闪烁处加一个外卖员的微表情或动作hesitation增强代入感",
+        "one_line_verdict": "教科书级的微短剧开场，每个字都在刀刃上"
+      }
+    },
+    {
+      "id": "g22",
+      "tags": [
+        "normal",
+        "悬疑"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 3,
+        "pacing": 2,
+        "consistency": 3,
+        "payoff": 2,
+        "dialogue": 1
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 15174,
+        "usage": {
+          "prompt_tokens": 1598,
+          "completion_tokens": 832,
+          "total_tokens": 2430,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 3,
+            "evidence": "外卖员小王接到了一个奇怪的订单，地址是这栋楼的 14 层，但是这栋楼只有 13 层。",
+            "comment": "第一句就给出冲突（楼层不存在），但用'奇怪'这种概括词削弱了冲击力，且立刻用旁白解释而非让读者自己发现"
+          },
+          "pacing": {
+            "score": 2,
+            "evidence": "他感到很奇怢，但还是决定去看看。他乘电梯到了 13 层，然后发现旁边有一个楼梯通往 14 层。",
+            "comment": "大量'他...然后他...然后'的流水账，'感到很奇怪''感到非常害怕'都是空洞的情绪告知，没有通过行动或细节推进"
+          },
+          "consistency": {
+            "score": 2,
+            "evidence": "他把外卖放在门口，然后离开了。第二天，他听说这栋楼根本没有 14 层。",
+            "comment": "逻辑断裂：他已经走上去看到房间了，为什么第二天听说没有 14 层会害怕？他的记忆消失了吗？前后认知矛盾"
+          },
+          "payoff": {
+            "score": 1,
+            "evidence": "他敲了敲门，没有人回应。他把外卖放在门口，然后离开了。",
+            "comment": "没有任何情绪释放点，最该出现悬念或恐怖氛围的时刻（敲门、14层内部）完全平铺直叙，结尾'感到害怕'是告知不是释放"
+          },
+          "dialogue": {
+            "score": 1,
+            "evidence": "全文无对白",
+            "comment": "通篇旁白叙述，没有一句人物对白，完全是小说式的第三人称转述，不是剧本"
+          }
+        },
+        "scores": {
+          "hook": 3,
+          "pacing": 2,
+          "consistency": 2,
+          "payoff": 1,
+          "dialogue": 1
+        },
+        "weighted": 1.84,
+        "top_issue": "这是小说梗概不是剧本，缺少场景、对白、动作，所有情绪都靠旁白告知而非呈现",
+        "one_line_verdict": "有怪谈内核但完全不是剧本格式，需要改写成带场景和对白的可拍摄脚本，且逻辑链条要自洽"
+      }
+    },
+    {
+      "id": "g23",
+      "tags": [
+        "normal",
+        "家庭"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 3,
+        "pacing": 4,
+        "consistency": 5,
+        "payoff": 5,
+        "dialogue": 4
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 15046,
+        "usage": {
+          "prompt_tokens": 1692,
+          "completion_tokens": 715,
+          "total_tokens": 2407,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "女儿翻抽屉找户口本，翻出一摞汇款单。收款人全是她的名字，寄款人是「王阿姨」。",
+            "comment": "第二句话立刻抛出悬念：陌生的王阿姨为什么给女儿汇款八年？冲突即刻到位"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "她数了数：一共 96 张。八年，每月一张 → 父亲谎称邻居 → 女儿用笔迹拆穿谎言",
+            "comment": "每句都在推进：量化铺垫→对质→敷衍→证据反杀，无一句废话"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "父亲（端着饭进来）：找到没？→ 父亲：……邻居 → 父亲：她心好",
+            "comment": "父亲从自然询问到停顿到敷衍，层层退守符合被拆穿者的心理轨迹；笔迹细节前后呼应完美"
+          },
+          "payoff": {
+            "score": 5,
+            "evidence": "爸，你写「王」字的时候，第三横总比第二横短",
+            "comment": "用笔迹细节拆穿父亲八年善意谎言，压抑（父亲两次敷衍）到释放（证据链完整）节奏精准，情绪炸裂"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "她心好 / 王阿姨是谁？ / 你写「王」字的时候，第三横总比第二横短",
+            "comment": "父亲的敷衍短促无力，女儿的追问层层递进，最后一句用细节而非指控，全是真人说话的方式"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "weighted": 5,
+        "top_issue": "无明显问题，已是成熟可拍摄脚本",
+        "one_line_verdict": "教科书级别的短剧片段：悬念、节奏、反转、情感释放四要素全在，96 张汇款单和笔迹细节堪称神来之笔"
+      }
+    },
+    {
+      "id": "g24",
+      "tags": [
+        "normal",
+        "家庭"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 2,
+        "pacing": 3,
+        "consistency": 4,
+        "payoff": 3,
+        "dialogue": 3
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 13269,
+        "usage": {
+          "prompt_tokens": 1466,
+          "completion_tokens": 707,
+          "total_tokens": 2173,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 2,
+            "evidence": "女儿回到老家，发现父亲这些年一直以「王阿姨」的名义偷偷给她打钱。",
+            "comment": "第一句直接给出了秘密和结论，没有悬念过程，读者缺少发现的快感"
+          },
+          "pacing": {
+            "score": 1,
+            "evidence": "她非常感动，眼泪流了下来 / 父女俩紧紧抱在一起，多年的隔阂在这一刻消融了",
+            "comment": "发现秘密后直接跳到和解拥抱，中间没有任何冲突或情绪波动，像按了快进键"
+          },
+          "consistency": {
+            "score": 3,
+            "evidence": "你走的时候说过，再也不要我一分钱 / 是我以前太固执",
+            "comment": "人物关系和过往冲突有基本交代，但父亲的「固执」具体指什么没有支撑"
+          },
+          "payoff": {
+            "score": 1,
+            "evidence": "女儿：爸……我错了。父亲：不怪你。是我以前太固执。",
+            "comment": "和解来得太快太轻，两句「我错了」就化解多年隔阂，没有挣扎犹豫，情绪释放量为零"
+          },
+          "dialogue": {
+            "score": 2,
+            "evidence": "多年的隔阂在这一刻消融了",
+            "comment": "这句是旁白式总结，不是对白。对白部分虽然简短，但都是解释性信息，缺少潜台词"
+          }
+        },
+        "scores": {
+          "hook": 2,
+          "pacing": 1,
+          "consistency": 3,
+          "payoff": 1,
+          "dialogue": 2
+        },
+        "weighted": 1.84,
+        "top_issue": "发现秘密后直接跳到和解，缺少情绪发酵和冲突反复的过程",
+        "one_line_verdict": "秘密揭晓得太直白，和解来得太便宜，观众还没共情就已经结束了"
+      }
+    },
+    {
+      "id": "g25",
+      "tags": [
+        "normal",
+        "职场"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 4,
+        "pacing": 5,
+        "consistency": 4,
+        "payoff": 4,
+        "dialogue": 5
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 18570,
+        "usage": {
+          "prompt_tokens": 1682,
+          "completion_tokens": 677,
+          "total_tokens": 2359,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "投资人：你们三个月烧了 400 万，用户 8000。一个用户 500 块，你卖什么？",
+            "comment": "第一句就是尖锐质疑，用数据把危机和压力直接砸出来，必须往下看答案"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "CEO：卖睡眠。/ 投资人：？/ CEO：8000 个用户里，6200 个是产后妈妈",
+            "comment": "每一轮对话都在推进信息，从质疑到产品逻辑到证据到反转，没有一句废话"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "CEO（推过去一台手机）：这是我老婆的。你翻一下她过去 90 天的睡眠记录",
+            "comment": "CEO用老婆数据做产品符合创业者all in的人设，投资人质疑也符合其审慎身份，逻辑链完整"
+          },
+          "payoff": {
+            "score": 5,
+            "evidence": "CEO：我拿老婆的数据来做的产品。融资是顺便的。",
+            "comment": "前面投资人层层施压，最后这句完成价值观反转，从被质疑者变成有底气的产品人，爽点精准"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "投资人：你们三个月烧了 400 万，用户 8000。一个用户 500 块，你卖什么？/ CEO：卖睡眠。",
+            "comment": "对白极短，投资人的攻击性和CEO的克制都在语气里，没有解释性台词，完全可以直接拍"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "weighted": 5,
+        "top_issue": "无明显问题，若追求更高层次可在投资人看手机后加一句反应台词增强情绪层次",
+        "one_line_verdict": "教科书级别的融资刁难场景，数据压迫+价值反转，节奏、人设、爽点全在线"
+      }
+    },
+    {
+      "id": "g26",
+      "tags": [
+        "normal",
+        "职场"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 1,
+        "pacing": 2,
+        "consistency": 4,
+        "payoff": 1,
+        "dialogue": 1
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 10024,
+        "usage": {
+          "prompt_tokens": 1699,
+          "completion_tokens": 733,
+          "total_tokens": 2432,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 1,
+            "evidence": "投资人：你们的商业模式是什么？CEO：我们是一家专注于母婴健康领域的科技公司……",
+            "comment": "开场就是平平无奇的问答，没有任何冲突、刁难或悬念，完全是商务寒暄，不存在让人想继续读的钩子。"
+          },
+          "pacing": {
+            "score": 2,
+            "evidence": "投资人：你们的核心竞争力是什么？CEO：我们拥有一支经验丰富的团队，深刻理解用户需求……",
+            "comment": "两轮问答结构相同、力度相同，信息密度极低，第二轮是第一轮的平行复制，剧情完全没有前进。"
+          },
+          "consistency": {
+            "score": 2,
+            "evidence": "投资人：好的，我们回去再研究一下。",
+            "comment": "创作要求是投资人刁难，但投资人全程语气温和、毫无刁难动作，与设定预期严重背离，属于人设执行缺失。"
+          },
+          "payoff": {
+            "score": 1,
+            "evidence": "CEO：谢谢您的时间，期待与您合作。",
+            "comment": "片段以礼貌告别收尾，没有任何打脸、反转、压迫或逆袭时刻，情绪曲线从头到尾是一条水平线。"
+          },
+          "dialogue": {
+            "score": 1,
+            "evidence": "致力于通过人工智能和大数据技术，为产后妈妈提供全方位的睡眠健康解决方案，构建母婴健康生态闭环。",
+            "comment": "CEO台词是PPT文案的直接朗读，没有真人说话的停顿、语气和个性，典型的念稿腔。"
+          }
+        },
+        "scores": {
+          "hook": 1,
+          "pacing": 2,
+          "consistency": 2,
+          "payoff": 1,
+          "dialogue": 1
+        },
+        "weighted": 1.44,
+        "top_issue": "投资人根本没有刁难——这是最核心的问题，整个场景的戏剧张力全靠冲突撑起，不加压就没有故事。",
+        "one_line_verdict": "这不是融资被刁难，是一场顺利到无聊的礼貌会面，创作要求的核心冲突一句都没有落地。"
+      }
+    },
+    {
+      "id": "g27",
+      "tags": [
+        "normal",
+        "情感"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 3,
+        "pacing": 4,
+        "consistency": 5,
+        "payoff": 4,
+        "dialogue": 4
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 12252,
+        "usage": {
+          "prompt_tokens": 1783,
+          "completion_tokens": 680,
+          "total_tokens": 2463,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 2,
+            "evidence": "周三，下午两点。阿雅跟着那辆车开到了城郊的一所小学。",
+            "comment": "前3句都是跟踪过程描写，没有立即的冲突或悬念，要读到第4句小男孩出现才有疑问"
+          },
+          "pacing": {
+            "score": 4,
+            "evidence": "阿雅在车里坐了十分钟，然后下车",
+            "comment": "整体推进流畅，每段都有新信息，但坐车十分钟这句可删且不影响剧情"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "丈夫：他叫小树。不是我的。丈夫：我弟的。我弟三年前走了，孩子妈也走了",
+            "comment": "人物反应符合闪婚背景的陌生感，事实链条完整自洽，丈夫的坦白逻辑合理"
+          },
+          "payoff": {
+            "score": 4,
+            "evidence": "丈夫：我怕你以为我是为了找人帮我养他才结婚的",
+            "comment": "揭秘点有情绪释放，前面跟踪铺垫了压抑，但力度可以更强，目前偏温吞"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "阿雅（走过去，蹲下）：小树，阿姨会做红烧肉。你吃不吃？",
+            "comment": "对白短促有潜台词，红烧肉是行动不是解释，完全像真人说话"
+          }
+        },
+        "scores": {
+          "hook": 2,
+          "pacing": 4,
+          "consistency": 5,
+          "payoff": 4,
+          "dialogue": 5
+        },
+        "weighted": 4,
+        "top_issue": "开场前3句缺少抓人的钩子，应该让小男孩或冲突更早出现",
+        "one_line_verdict": "揭秘合理，对白自然，但开头太平缓，需要把悬念前置"
+      }
+    },
+    {
+      "id": "g28",
+      "tags": [
+        "normal",
+        "情感"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 2,
+        "pacing": 3,
+        "consistency": 4,
+        "payoff": 2,
+        "dialogue": 2
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 14592,
+        "usage": {
+          "prompt_tokens": 1695,
+          "completion_tokens": 738,
+          "total_tokens": 2433,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 2,
+            "evidence": "阿雅一直很好奇丈夫每周三下午去哪里了。这天她决定跟着他，看看他到底在做什么。",
+            "comment": "开场是陈述性铺垫，好奇心不是冲突，要读到小男孩抱住丈夫才出现真正的悬念和危机感"
+          },
+          "pacing": {
+            "score": 4,
+            "evidence": "她开车跟在他后面，发现他去了城郊的一所小学。她看到一个小男孩跑过来抱住他，心里一沉。",
+            "comment": "每段都在推进，从跟踪到发现到质问，节奏紧凑，但阿雅痛苦流泪和决定回家谈谈有轻微重复情绪"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "丈夫：加班。阿雅：你骗我！我看到你和一个小孩在一起！",
+            "comment": "丈夫先说谎再被戳穿的反应符合有秘密的人设，阿雅从跟踪到质问的行为逻辑完全自洽"
+          },
+          "payoff": {
+            "score": 3,
+            "evidence": "她看到一个小男孩跑过来抱住他，心里一沉。难道他有私生子？",
+            "comment": "私生子悬念是情绪点，但压抑后立刻切到晚上对质，释放被延后，观众想看的反转还没给出"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "阿雅：你今天下午去哪了？丈夫：加班。阿雅：你骗我！我看到你和一个小孩在一起！",
+            "comment": "对白简短有潜台词，加班的谎言、你骗我的质问都是真人会说的话，没有书面语"
+          }
+        },
+        "scores": {
+          "hook": 2,
+          "pacing": 4,
+          "consistency": 5,
+          "payoff": 3,
+          "dialogue": 5
+        },
+        "weighted": 3.8,
+        "top_issue": "开场前两句是平铺直叙，应该直接从跟踪或发现小男孩的画面切入",
+        "one_line_verdict": "对白和逻辑都过关，但开场钩子弱，悬念揭晓时刻应该放在片段内完成一次小释放"
+      }
+    },
+    {
+      "id": "g29",
+      "tags": [
+        "normal",
+        "逆袭"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 3,
+        "pacing": 4,
+        "consistency": 4,
+        "payoff": 4,
+        "dialogue": 4
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 11187,
+        "usage": {
+          "prompt_tokens": 1455,
+          "completion_tokens": 742,
+          "total_tokens": 2197,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "老板堵在门口。老板：你摆我门口，想干什么？",
+            "comment": "第一句话就是冲突对峙，老板和被辞退的厨子直接开撕"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "老板：我让人来赶你——（酒楼门开，一群穿西装的客人走出来，径直排到老赵摊前）",
+            "comment": "每句都在推进，威胁话还没说完客人就出现打脸，没有一句废话"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "客人：老赵！听说你出来单干了？给我来三碗，打包！里面那个厨子做的汤跟刷锅水一样。",
+            "comment": "客人认识老赵且知道他手艺好，和他被辞退后摆摊的设定完全吻合"
+          },
+          "payoff": {
+            "score": 5,
+            "evidence": "老板：我让人来赶你——（酒楼门开，一群穿西装的客人走出来）客人：里面那个厨子做的汤跟刷锅水一样。老板：……",
+            "comment": "老板威胁在前，客人当面打脸在后，爽点精准，老板哑口无言是情绪释放"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "老赵：你门口人多，我就借一个礼拜。一个礼拜以后，我去对面。",
+            "comment": "每句都是真人说话的语气，短促、有潜台词，老赵的淡定和老板的急躁对比鲜明"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "weighted": 5,
+        "top_issue": "无明显问题，如果一定要说，可以考虑让老板有一句更狠的收尾反应",
+        "one_line_verdict": "标准的爽文节奏，冲突-打脸-反杀一气呵成，可以直接拍"
+      }
+    },
+    {
+      "id": "g30",
+      "tags": [
+        "normal",
+        "逆袭"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 2,
+        "pacing": 2,
+        "consistency": 4,
+        "payoff": 2,
+        "dialogue": 1
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 14709,
+        "usage": {
+          "prompt_tokens": 13786,
+          "completion_tokens": 604,
+          "total_tokens": 14390,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 2,
+            "evidence": "老赵被酒楼辞退了。他没有气馁，而是决定在酒楼门口摆摊卖面。",
+            "comment": "前两句只是平铺直叙地交代背景，没有冲突张力或悬念，读者看不到必须往下读的理由"
+          },
+          "pacing": {
+            "score": 1,
+            "evidence": "他的面非常好吃，很多人都来买。酒楼老板看到了，非常生气，想要赶他走。但是酒楼的客人都说老赵的面好吃，纷纷来买他的面。",
+            "comment": "面好吃这个信息重复了三次，剧情几乎在原地打转，缺少具体的冲突过程和转折"
+          },
+          "consistency": {
+            "score": 3,
+            "evidence": "老赵被酒楼辞退了...老赵用自己的手艺证明了自己",
+            "comment": "人物身份和因果链条基本自洽，但酒楼老板从生气想赶人到眼睁睁看着的转变缺少过渡"
+          },
+          "payoff": {
+            "score": 2,
+            "evidence": "酒楼老板没有办法，只能眼睁睁看着自己的客人被抢走",
+            "comment": "有打脸的方向，但压抑和释放都太概括，没有让人拍手叫好的具体时刻"
+          },
+          "dialogue": {
+            "score": 1,
+            "evidence": "整段没有对白",
+            "comment": "全是旁白式的叙述，没有任何人物对话，完全不像剧本"
+          }
+        },
+        "scores": {
+          "hook": 2,
+          "pacing": 1,
+          "consistency": 3,
+          "payoff": 2,
+          "dialogue": 1
+        },
+        "weighted": 1.88,
+        "top_issue": "整段是故事梗概不是剧本，没有对白、没有场景、没有具体动作，全是概括性叙述",
+        "one_line_verdict": "这是大纲不是剧本，需要用场景、对白、动作把骨架填成肉"
+      }
+    },
+    {
+      "id": "g31",
+      "tags": [
+        "normal",
+        "悬疑"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 4,
+        "pacing": 5,
+        "consistency": 4,
+        "payoff": 5,
+        "dialogue": 3
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 22584,
+        "usage": {
+          "prompt_tokens": 12324,
+          "completion_tokens": 570,
+          "total_tokens": 12894,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "凌晨一点，妻子睡了。手机亮了一下。备忘录提醒：「明天，最后一次。」",
+            "comment": "前三句直接抛出悬念，「最后一次」配合凌晨场景立刻制造不安感"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "他想解锁，指纹不对。他想输密码，输了结婚纪念日，错。输了她生日，错。最后一次机会。他输了女儿的生日。开了。",
+            "comment": "每一步都在推进，三次密码尝试节奏紧凑，没有废话"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "备忘录里只有一行字：「他今晚会试三次密码。第三次是女儿生日。」",
+            "comment": "妻子预判丈夫行为与丈夫实际操作完全吻合，逻辑闭环"
+          },
+          "payoff": {
+            "score": 5,
+            "evidence": "他输了女儿的生日。开了。备忘录里只有一行字：「他今晚会试三次密码。第三次是女儿生日。」",
+            "comment": "反转精准，丈夫自以为偷看实则全在妻子掌控中，压抑-释放比例完美"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "凌晨一点，妻子睡了。他想解锁，指纹不对。",
+            "comment": "无对白片段，动作描写简短有力，符合悬疑氛围"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "weighted": 5,
+        "top_issue": "无明显问题，结构完整",
+        "one_line_verdict": "教科书级悬疑开场，反转干净利落，可以直接拍"
+      }
+    },
+    {
+      "id": "g32",
+      "tags": [
+        "normal",
+        "职场"
+      ],
+      "expect": null,
+      "human": {
+        "hook": 3,
+        "pacing": 4,
+        "consistency": 5,
+        "payoff": 3,
+        "dialogue": 4
+      },
+      "judge": {
+        "status": "ok",
+        "rubric_version": "v1.1",
+        "prompt_version": "v1",
+        "model": "claude-sonnet-4-5-20250929",
+        "latency_ms": 12865,
+        "usage": {
+          "prompt_tokens": 1818,
+          "completion_tokens": 717,
+          "total_tokens": 2535,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {}
+        },
+        "off_topic": false,
+        "off_topic_reason": "",
+        "dimensions": {
+          "hook": {
+            "score": 5,
+            "evidence": "主任：按我说的开药。林医生：他的肌酐值不支持这个剂量。",
+            "comment": "前两句直接开打，年轻医生当面质疑权威的剂量，冲突即刻到位"
+          },
+          "pacing": {
+            "score": 5,
+            "evidence": "从质疑剂量到主任让步再到暗示历史错误，三次转折无一句废话",
+            "comment": "每句话都推进矛盾升级，删掉任何一句剧情都断"
+          },
+          "consistency": {
+            "score": 5,
+            "evidence": "主任用资历压人、林医生用数据反击、看到化验单后主任立刻改口",
+            "comment": "权威型主任和循证型年轻医生的行为逻辑完全对位，化验单是转折的硬支点"
+          },
+          "payoff": {
+            "score": 5,
+            "evidence": "主任（看了一眼）：……剂量减半。之后林医生提3床上周也是这个剂量，主任沉默转身往3床走",
+            "comment": "第一次打脸（剂量减半）铺垫到位，第二次暗示医疗事故更狠，压抑-释放节奏精准"
+          },
+          "dialogue": {
+            "score": 5,
+            "evidence": "我行医三十年 / 三十年前没有这台机器 / 剂量减半 / 说",
+            "comment": "全是短句硬碰硬，没有一句解释性台词，主任的省略号和沉默比台词更有张力"
+          }
+        },
+        "scores": {
+          "hook": 5,
+          "pacing": 5,
+          "consistency": 5,
+          "payoff": 5,
+          "dialogue": 5
+        },
+        "weighted": 5,
+        "top_issue": "无明显问题，若非要挑剔可在主任最后沉默前加一个微表情强化其内心冲击",
+        "one_line_verdict": "教科书级职场对抗，数据对资历、新人对权威，每个字都在刀刃上"
+      }
+    }
+  ]
+}
