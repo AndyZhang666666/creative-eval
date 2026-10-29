@@ -1,10 +1,31 @@
-# Creative Eval
+# Creative Eval · 第一轮裁判校准
+
+[当前评审工具](https://andyzhang666666.github.io/llm-output-eval/) · [English](README.en.md) · [作品索引](https://github.com/AndyZhang666666/AndyZhang666666/blob/main/PROJECTS.md)
+
+把模型当裁判之前，怎样检查这把尺子？
+
+## 值得看的设计
+
+- 先定义可观察的 rubric 锚点，再比较 Prompt。
+- 分开检查重复波动、人机分歧和位置偏差。
+- 保留原始运行与失败记录，不用界面更新冒充模型提升。
+
+## 建议体验路径
+
+1. 先阅读 rubric 与产品决策，查看第一版的校准目标。
+2. 按样本对照历史原始输出、人工标注与失败原因。
+3. 进入 Eval Lab 查看当前评审界面与 V1 / V2 迭代说明。
+
+**运行方式：** Eval 的历史第一版，保留 40 条构造样本与 32 条作者标注。当前工具见 llm-output-eval，两版样本和判据不合并。
+
+<details>
+<summary>展开实现、模型与验证记录</summary>
 
 给 AI 批量产出的长文本打分，并给打分器本身做体检。
 
 粘贴一段剧本片段 → 按 5 个固定维度输出分数、**原文证据**和打回理由。附一套校准脚本，回答「这个裁判自己可信吗」：同一条打 3 次稳不稳、和人标的一不一样、会不会看长度给分。
 
-- **在线 Demo**：https://andyzhang666666.github.io （先自己给样本打分，再翻牌看人工标注和两版裁判的分数）
+- **在线 Demo**：https://andyzhang666666.github.io/llm-output-eval/ （当前 Eval Lab；本仓库保留第一轮校准源码与历史记录）
 - **为什么是 5 个维度**：见 `docs/PRD.md`
 - **姊妹项目**：[filing-eval](https://github.com/AndyZhang666666/filing-eval) — 客观事实核查的另一套范式，两者刻意对照
 
@@ -63,3 +84,5 @@ npm run agreement -- results/eval-xxx.json   # 与人工标注的一致率
 - **维度覆盖有限**：目前只覆盖短剧/长文本创作场景，换到广告文案、小说、播客稿需要重写锚点。
 - **不做流式输出**：评测是给人看结论的，一边打分一边刷字反而看不清。
 - **不做用户系统和数据库**：结果落 JSON 文件，够用。
+
+</details>
